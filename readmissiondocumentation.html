@@ -1,1 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+ body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: #f7f9fc;
+   color: #333;
+   margin: 0;
+   padding: 0;
+   line-height: 1.7;
+ }
+ .container {
+   max-width: 900px;
+   margin: 40px auto;
+   background: #fff;
+   padding: 40px;
+   border-radius: 12px;
+   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+ }
+ h1, h2, h3 {
+   color: #0d47a1;
+   font-weight: 700;
+ }
+ h1 {
+   font-size: 2.2rem;
+   margin-bottom: 20px;
+ }
+ h2 {
+   font-size: 1.6rem;
+   margin-top: 40px;
+   border-left: 6px solid #1976d2;
+   padding-left: 10px;
+ }
+ h3 {
+   font-size: 1.2rem;
+   margin-top: 25px;
+ }
+ p, li {
+   font-size: 1rem;
+ }
+ ul {
+   padding-left: 20px;
+ }
+ .section {
+   margin-bottom: 45px;
+ }
+ .highlight-box {
+   background: #e3f2fd;
+   border-left: 5px solid #2196f3;
+   padding: 15px 20px;
+   margin: 25px 0;
+   border-radius: 8px;
+ }
+ .kpi-list li {
+   margin-bottom: 6px;
+ }
+ footer {
+   text-align: center;
+   padding: 30px 0;
+   color: #666;
+   font-size: 0.9rem;
+ }
+</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Case Study: Hospital Readmission Drivers & Root Cause Analysis</title>
+  <style>
+    :root{--bg:#f7f8fb;--card:#ffffff;--muted:#6b7280;--accent:#0b74de}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111827}
+    .container{max-width:980px;margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;gap:16px}
+    header h1{margin:0;font-size:20px}
+    .meta{color:var(--muted);margin-top:6px}
+    .card{background:var(--card);border-radius:12px;padding:20px;margin-top:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    h2{margin-top:0}
+    ul{margin:8px 0 12px 20px}
+    pre{white-space:pre-wrap;background:#0f1724;color:#f8fafc;padding:12px;border-radius:8px;overflow:auto}
+    .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .kpi{background:#f3f4f6;padding:12px;border-radius:8px}
+    footer{margin-top:22px;color:var(--muted);font-size:13px}
+    .badge{display:inline-block;background:linear-gradient(90deg,#e6f0ff,#f3f8ff);color:#0b4fa3;padding:6px 10px;border-radius:999px;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>📑 Portfolio Case Study: Hospital Readmission Drivers &amp; Root Cause Analysis</h1>
+        <div class="meta">Project: End‑to‑end analysis, KPIs &amp; Power BI dashboards — Benchmark achieved: <strong>10% readmission rate</strong></div>
+      </div>
+      <div style="margin-left:auto"><span class="badge">Power BI • DAX • Data Engineering</span></div>
+    </header>
+
+    <section class="card">
+      <h2>1. Project Overview</h2>
+      <p><strong>Title:</strong> Hospital Readmission Drivers &amp; Root Cause Analysis</p>
+      <p><strong>Objective:</strong> Identify, monitor and optimize drivers of readmission across hospital, community and daycare services. Developed <strong>23 KPIs</strong> and <strong>4 thematic dashboards</strong> to support leadership decisions. The analysis confirmed a <strong>10% readmission rate</strong>.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Data Cleaning &amp; Preparation</h2>
+      <p><strong>Sources:</strong> Hospital Support, Community Services, Daycare / Post‑discharge records.</p>
+      <ul>
+        <li>Deduplicated using <em>Hospital Number + Admission Date</em>.</li>
+        <li>Treated missing values for Postcode, ICD10, Discharge Location, Ethnicity &amp; Lead Professional Type.</li>
+        <li>Standardized dates, identifiers and categorical fields.</li>
+        <li>Feature engineering: <em>30‑Day Readmission Flag, Days to Readmission, Sequential Admission Indicators</em>.</li>
+        <li>Appended datasets into a single analytical model to enable cross‑sector analysis.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Data Quality Improvements</h2>
+      <ul>
+        <li>Introduced validation rules and mandatory fields for high‑impact clinical attributes.</li>
+        <li>Recommended monthly audits and department data stewards.</li>
+        <li>Prepared the dataset for equity reporting and pathway optimization.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Analytical Approach</h2>
+      <p>Conducted sectoral and cross‑sector analysis to identify drivers and preventative opportunities.</p>
+      <ul>
+        <li><strong>Hospital:</strong> Readmission (overall &amp; 30‑day), LOS, diagnosis drivers, discharge patterns.</li>
+        <li><strong>Community:</strong> Demographics, SES, vulnerable population profiling.</li>
+        <li><strong>Daycare:</strong> Post‑discharge services, follow‑up effectiveness, contact type impact.</li>
+        <li><strong>Cross‑sector:</strong> Combined effects of diagnosis, demographics and continuity of care.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. KPI Suite (Selected)</h2>
+      <div class="kpis">
+        <div class="kpi"><strong>Overall Readmission Rate</strong><div class="meta">Benchmark: 10%</div></div>
+        <div class="kpi"><strong>30‑Day Readmission Rate</strong></div>
+        <div class="kpi"><strong>Average Length of Stay</strong></div>
+        <div class="kpi"><strong>Top Diagnosis Drivers</strong></div>
+        <div class="kpi"><strong>Readmission by Discharge Location</strong></div>
+        <div class="kpi"><strong>Readmission by Ethnicity / SES</strong></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>6. Dashboard Design</h2>
+      <ul>
+        <li><strong>Patient Demographics &amp; Equity:</strong> Bar charts, maps, stacked visuals.</li>
+        <li><strong>Clinical Outcomes &amp; Pathways:</strong> KPI cards, histograms, diagnosis drilldowns.</li>
+        <li><strong>Post‑Discharge Care &amp; Continuity:</strong> Daycare impact comparisons, service‑type charts.</li>
+        <li><strong>Executive Summary:</strong> Board KPIs, Top‑5 drivers, equity snapshots.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>7. Refined Recommendations (Given 10% Readmission Rate)</h2>
+      <p>With the benchmark achieved, the strategy focuses on sustaining performance, targeted micro‑improvements and predictive prevention.</p>
+      <ol>
+        <li><strong>Maintain Strong Discharge Practices:</strong> Quarterly reviews, standardized checklists, ensure scheduled follow‑ups.</li>
+        <li><strong>Target High‑Risk Diagnoses:</strong> Identify top 3 high‑risk conditions and pilot small condition‑specific bundles.</li>
+        <li><strong>Early Follow‑Up for At‑Risk Groups:</strong> 48–72‑hour calls, telehealth, community nurse monitoring, automated reminders.</li>
+        <li><strong>Predictive Insights:</strong> Simple risk‑scoring and dashboard alerts integrated into discharge planning.</li>
+        <li><strong>Address Equity Variations:</strong> Improve demographic capture, design targeted community programs, monitor gaps.</li>
+        <li><strong>Optimize Data Capture & Monitoring:</strong> Automated validation, weekly KPI refreshes, ward‑level tracking.</li>
+        <li><strong>Sustain Team Accountability:</strong> Governance integration, highlight and share best practices.</li>
+        <li><strong>Pilot Low‑Cost Micro‑Interventions:</strong> SMS reminders, brief virtual check‑ins, digital care plans.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>8. Insights &amp; Impact</h2>
+      <ul>
+        <li>Validated hospital performance at benchmark (10%).</li>
+        <li>Identified focused opportunities for incremental improvement.</li>
+        <li>Demonstrated daycare/post‑discharge protective effects.</li>
+        <li>Delivered a clear roadmap for proactive, equity‑aware optimization.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>9. Conclusion</h2>
+      <p>This project demonstrates proficiency in data engineering, DAX modeling, KPI development and Power BI dashboards — delivering an actionable, equitable, and sustainable strategy to manage and improve hospital readmissions.</p>
+    </section>
+
+    <footer>
+      Need a PDF, a GitHub README or a LinkedIn summary? Reply with which format you prefer and I’ll export it.
+    </footer>
+  </div>
+</body>
+</html>
 
