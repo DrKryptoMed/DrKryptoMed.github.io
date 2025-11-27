@@ -176,7 +176,7 @@ nav ul li a:hover::after {
 
 .profile-photo {
     width: 280px;
-    height: 260px;
+    height: 320px;
     border-radius: 50%;
     object-fit: cover;
     border: 7px solid var(--white-color);
