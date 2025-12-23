@@ -1,91 +1,85 @@
+# 🧠 Neuroscience × Public Health × Data Science Portfolio
 
-# 🩺 Ibrahim Mikail | Medical & Health Data Science Portfolio
+## Overview
+This portfolio showcases my work at the intersection of **neuroscience, public health, and data science**, with a focus on **neuroepidemiology, computational neuroscience, translational neurobiology, and clinical data science**. It reflects my academic and professional journey toward **data-driven neuroscience research** and my long-term goal of pursuing a **PhD in Neuroscience or a related interdisciplinary field**.
 
-)
-
-## 📖 Overview
-
-This repository contains the source code for my personal professional portfolio website. As a **Healthcare Analyst, Data Scientist, and Epidemiologist**, I use this platform to showcase my projects, technical skills, and research contributions.
-
-The site is designed to be fully responsive, accessible, and clean, highlighting the intersection of medical knowledge and data insight.
-
-**🔗 [Live Demo](https://your-username.github.io/repo-name)** *(Replace this with your actual GitHub Pages link)*
+My work emphasizes the use of **population-level and clinical data** to understand neurological disorders, improve health outcomes, and support evidence-based decision-making in brain health.
 
 ---
 
-## 👨‍⚕️ About Me
-
-I am a Health Data Scientist with a background in **Human Anatomy** and a **Master’s in Public Health**. My work focuses on transforming complex health information into actionable solutions that improve patient outcomes and strengthen healthcare systems with special interest in  **innovation in neurological health**—leveraging Machine Learning and causal inference to understand the distribution and determinants of neurological disorders.
-
-I combine medical knowledge of the nervous system with advanced analytics (Python, R, SQL) to uncover patterns in stroke, neurodegenerative diseases, and mental health outcomes. My goal is to drive evidence-based interventions through data-driven innovation.
-
+## Academic Background
+- **BSc Human Anatomy** – Strong foundation in neuroanatomy and biological sciences  
+- **MSc Public Health (in progress)** – Epidemiology, biostatistics, population health, and health systems  
+- **Professional Training** – Data Science & Analytics (DataCamp, Coursera, Google)
 
 ---
 
-## 🛠️ Tech Stack & Features
+## Research & Technical Focus Areas
 
-### Website Architecture
-* **Structure:** Semantic HTML5
-* **Styling:** Custom CSS3 with Flexbox/Grid for responsiveness
-* **Typography:** Google Fonts (Lato & Playfair Display)
-* **Icons:** Font Awesome 6.4.2
-* **Contact Form:** Powered by [FormSubmit.co](https://formsubmit.co) (Serverless implementation)
+### 🧠 Neuroepidemiology
+- Distribution and determinants of neurological disorders  
+- Population-level analysis of stroke, neurodegenerative diseases, and brain health outcomes  
+- Burden of disease estimation, risk factor modeling, and outcome analysis  
 
-### Data Science Skills Highlighted
-* **Programming:** Python, R (Markdown), SQL, SPSS, AWS.
-* **Analytics:** Predictive Modelling, Generalized Linear Models, Causal Inference, Time-series.
-* **Epidemiology:** Cohort/Case-control studies, Biostatistics, Risk Adjustment (HCC), ICD-10 Coding.
-* **Visualization:** Power BI, Tableau.
+### 💻 Computational & Data-Driven Neuroscience
+- Application of machine learning and statistical modeling in neuroscience  
+- Predictive modeling, risk stratification, and causal inference  
+- Integration of biological, clinical, and population-level datasets  
+
+### 🔬 Neuroanatomy & Translational Neuroscience
+- Biological interpretation of neurological and clinical data  
+- Bridging neuroanatomy with computational and epidemiologic research  
+- Translational insights for brain health and neurological disease research  
+
+### 🏥 Clinical Data Science & Healthcare Analytics
+- Analysis of real-world clinical and healthcare datasets  
+- Outcome evaluation, healthcare performance, and quality improvement  
+- Evidence-based analytics to support neurological and population health research  
 
 ---
 
-## 📂 Repository Structure
+## Tools & Skills
+- **Programming & Analysis:** Python, R, SQL  
+- **Methods:** Epidemiology, biostatistics, machine learning, causal inference  
+- **Domains:** Neuroscience, public health, healthcare analytics, clinical research  
+- **Data Types:** Clinical data, observational datasets, population health data  
 
-```bash
-├── assets/
-│   ├── css/
-│   │   └── style.css       # Main stylesheet
-│   ├── images/
-│   │   ├── profile.png     # Headshots and project previews
-│   │   └── favicon.png
-│   ├── js/
-│   │   └── main.js         # Navigation scripts
-│   └── Your_Name_CV.pdf    # Downloadable Resume
-├── index.html              # Main landing page
-└── README.md               # Project documentation
+---
 
-🚀 Projects Showcase
-This portfolio features detailed breakdowns of my analytical work, including:
- * Healthcare Readmission Rate & Root Cause Analysis:
-   * Tools: Power BI, SQL.
-   * Scope: Dashboard analyzing hospital readmission drivers, KPIs, and equity trends.
- * [Placeholder] Project Two:
-   * Description: Upcoming analysis on [Topic].
- * [Placeholder] Project Three:
-   * Description: Upcoming analysis on [Topic].
-💻 How to Run Locally
-If you wish to view or modify the code on your local machine:
- * Clone the repository:
-   git clone [https://github.com/DrKryptoMed/your-repo-name.git](https://github.com/DrKryptoMed/your-repo-name.git)
+## Portfolio Projects
+This repository includes:
+- Neuroepidemiology and population brain health analyses  
+- Clinical outcome modeling and healthcare analytics projects  
+- Machine learning applications in neurological health  
+- Reproducible research workflows with transparent methodology  
 
- * Navigate to the project directory:
-   cd your-repo-name
+Each project is designed to reflect **research-grade thinking**, reproducibility, and clinical or public health relevance.
 
- * Open the file:
-   Double-click index.html to open it in your default web browser.
-📬 Contact
-I am open to collaborations on medical research, data analysis projects, and healthcare consultancy.
- * LinkedIn: Ibrahim Mikail
- * GitHub: DrKryptoMed
- * Kaggle: mikailibrahimaremu
- * ORCID: 0009-0009-7869-7585
-<p align="center">
-&copy; 2025 DrKryptoMed. All rights reserved.
-</p>
+---
 
-### Next Step for You
+## Research Philosophy
+I believe impactful neuroscience research emerges when **biological insight, population health perspectives, and computational methods** are integrated. My work prioritizes:
+- Scientific rigor and methodological transparency  
+- Clinical and public health relevance  
+- Reproducibility and interpretability  
+- Translation of data into real-world impact  
 
-I noticed you have `readmissiondocumentation.html` linked in your "Projects" section, but I haven't seen the code for that file yet.
+---
 
-**Would you like me to generate a template for that documentation page so it matches the style of your main portfolio?**
+## Professional & Academic Goals
+- Build a strong research portfolio in **neuroepidemiology and computational neuroscience**  
+- Contribute to interdisciplinary neuroscience and public health research  
+- Pursue a **PhD in Neuroscience or a related data-driven brain science field**  
+- Collaborate with researchers, clinicians, and data scientists working on brain health  
 
+---
+
+## Collaboration & Research Support
+I also provide support in:
+- Medical and public health research design  
+- Statistical analysis and data interpretation  
+- Evidence-based methodology for student and academic projects  
+
+---
+
+📩 **Open to collaboration, research opportunities, and academic discussions** in neuroscience, public health, and clinical data science.
