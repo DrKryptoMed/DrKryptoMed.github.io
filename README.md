@@ -1,85 +1,75 @@
-# 🧠 Neuroscience × Public Health × Data Science Portfolio
+<div align="center">
 
-## Overview
-This portfolio showcases my work at the intersection of **neuroscience, public health, and data science**, with a focus on **neuroepidemiology, computational neuroscience, translational neurobiology, and clinical data science**. It reflects my academic and professional journey toward **data-driven neuroscience research** and my long-term goal of pursuing a **PhD in Neuroscience or a related interdisciplinary field**.
-
-My work emphasizes the use of **population-level and clinical data** to understand neurological disorders, improve health outcomes, and support evidence-based decision-making in brain health.
-
----
-
-## Academic Background
-- **BSc Human Anatomy** – Strong foundation in neuroanatomy and biological sciences  
-- **MSc Public Health (in progress)** – Epidemiology, biostatistics, population health, and health systems  
-- **Professional Training** – Data Science & Analytics (DataCamp, Coursera, Google)
+# 🩺 Ibrahim | The Physician-Scientist 🧬
+  
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2E7D32&center=true&vCenter=true&width=500&lines=BSc+Anatomy+%7C+MSc+Public+Health;AI+%2F+ML+in+Oncology;Future+MD+(Sept+2026);Bridging+Medicine+%26+Data" alt="Typing SVG" />
 
 ---
 
-## Research & Technical Focus Areas
+### 🚀 Mission: Precision Oncology through Intelligence
+*Transforming cancer care by integrating clinical anatomy, population health, and machine learning.*
 
-### 🧠 Neuroepidemiology
-- Distribution and determinants of neurological disorders  
-- Population-level analysis of stroke, neurodegenerative diseases, and brain health outcomes  
-- Burden of disease estimation, risk factor modeling, and outcome analysis  
+[📊 My Portfolio](#) • [🎥 YouTube](https://www.youtube.com/@DrKrypto_HealthIntel) • [💼 LinkedIn](#)
 
-### 💻 Computational & Data-Driven Neuroscience
-- Application of machine learning and statistical modeling in neuroscience  
-- Predictive modeling, risk stratification, and causal inference  
-- Integration of biological, clinical, and population-level datasets  
-
-### 🔬 Neuroanatomy & Translational Neuroscience
-- Biological interpretation of neurological and clinical data  
-- Bridging neuroanatomy with computational and epidemiologic research  
-- Translational insights for brain health and neurological disease research  
-
-### 🏥 Clinical Data Science & Healthcare Analytics
-- Analysis of real-world clinical and healthcare datasets  
-- Outcome evaluation, healthcare performance, and quality improvement  
-- Evidence-based analytics to support neurological and population health research  
+</div>
 
 ---
 
-## Tools & Skills
-- **Programming & Analysis:** Python, R, SQL  
-- **Methods:** Epidemiology, biostatistics, machine learning, causal inference  
-- **Domains:** Neuroscience, public health, healthcare analytics, clinical research  
-- **Data Types:** Clinical data, observational datasets, population health data  
+## 👨‍💻 About Me
+- 🎓 **Clinical Base:** BSc in Anatomy & Incoming Medical Student (Sept 2026).
+- 🌍 **System Perspective:** MSc in Public Health focusing on Oncology epidemiology.
+- 🧪 **Digital Toolkit:** Certified in Google Data Analytics, currently mastering AI/ML for Healthcare.
+- 🧬 **The Goal:** Utilizing an integrated approach in **Surgical Oncology** to improve late-stage cancer prediction and personalized care.
 
 ---
 
-## Portfolio Projects
-This repository includes:
-- Neuroepidemiology and population brain health analyses  
-- Clinical outcome modeling and healthcare analytics projects  
-- Machine learning applications in neurological health  
-- Reproducible research workflows with transparent methodology  
+## 🛠 Tech Stack & Tools
 
-Each project is designed to reflect **research-grade thinking**, reproducibility, and clinical or public health relevance.
+### 🧠 Artificial Intelligence & Data
+<p align="left">
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,pandas,sklearn,r" />
+</a>
+</p>
 
----
-
-## Research Philosophy
-I believe impactful neuroscience research emerges when **biological insight, population health perspectives, and computational methods** are integrated. My work prioritizes:
-- Scientific rigor and methodological transparency  
-- Clinical and public health relevance  
-- Reproducibility and interpretability  
-- Translation of data into real-world impact  
-
----
-
-## Professional & Academic Goals
-- Build a strong research portfolio in **neuroepidemiology and computational neuroscience**  
-- Contribute to interdisciplinary neuroscience and public health research  
-- Pursue a **PhD in Neuroscience or a related data-driven brain science field**  
-- Collaborate with researchers, clinicians, and data scientists working on brain health  
+### 🧬 Bioinformatics & Research
+<p align="left">
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=bash,git,r,regex,vscode,mysql" />
+</a>
+<br>
+<i>+ GATK, Bioconductor, RNA-seq, & Population Genomics Modeling</i>
+</p>
 
 ---
 
-## Collaboration & Research Support
-I also provide support in:
-- Medical and public health research design  
-- Statistical analysis and data interpretation  
-- Evidence-based methodology for student and academic projects  
+## 📊 Performance Metrics
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&title_color=2E7D32&icon_color=2E7D32" height="180em" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true&title_color=2E7D32" height="180em" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight&hide_border=true&stroke=2E7D32&ring=2E7D32&fire=2E7D32" alt="streak stats" />
+</p>
 
 ---
 
-📩 **Open to collaboration, research opportunities, and academic discussions** in neuroscience, public health, and clinical data science.
+## 🏗 What I'm Building
+- 🔬 **[Late-Stage Cancer Predictor](https://github.com/YOUR_USERNAME/cancer-prediction-ml):** An ML model using socio-demographic data to identify high-risk patients.
+- 🧬 **[Genomics-to-Clinic](https://github.com/YOUR_USERNAME/precision-oncology):** A repository for bioinformatics pipelines tailored for African genomic diversity.
+- 🎥 **[HealthIntel-Code](https://github.com/YOUR_USERNAME/DrKrypto-HealthIntel):** Code samples and resources from my YouTube channel.
+
+---
+
+<div align="center">
+
+### 🤝 Let's Collaborate
+*Open to research collaborations in Computational Oncology and Health Informatics.*
+
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@DrKrypto_HealthIntel)
+
+</div>
