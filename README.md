@@ -18,14 +18,14 @@
 ## 👨‍💻 About Me
 - 🎓 **Clinical Base:** BSc in Anatomy, MSc in Public Health & current MBBS Student.
 - 🌍 **System Perspective:** Training in Genomics and Bioinformatics focusing on Cancer Dataset.
-- 🧪 **Digital Toolkit:** Certified in Data Analytics, currently mastering AI/ML for Healthcare.
+- 🧪 **Digital Toolkit:** Certified in Data Analytics, currently mastering AI/ML for Healthcare and a fullstack vibecoder.
 - 🧬 **The Goal:** Utilizing an integrated approach in **Computational Oncology** to improve late-stage cancer prediction and personalized care.
 
 ---
 
 ## 🛠 Tech Stack & Tools
 
-### 🧠 Artificial Intelligence & Data
+### 🧠 Artificial Intelligence / machine learning / Deep learning / Healthcare Data Governance 
 <p align="left">
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,pandas,sklearn,r" />
