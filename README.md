@@ -46,20 +46,18 @@
 ## 📊 Performance Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&title_color=2E7D32&icon_color=2E7D32" height="180em" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true&title_color=2E7D32" height="180em" />
+  <img src="https://github-readme-stats.vercel.app/api?username=DrKryptoMed&show_icons=true&theme=tokyonight&hide_border=true&title_color=2E7D32&icon_color=2E7D32" height="180em" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DrKryptoMed&layout=compact&theme=tokyonight&hide_border=true&title_color=2E7D32" height="180em" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight&hide_border=true&stroke=2E7D32&ring=2E7D32&fire=2E7D32" alt="streak stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DrKryptoMed&theme=tokyonight&hide_border=true&stroke=2E7D32&ring=2E7D32&fire=2E7D32" alt="streak stats" />
 </p>
 
 ---
 
 ## 🏗 What I'm Building
-- 🔬 **[Late-Stage Cancer Predictor](https://github.com/YOUR_USERNAME/cancer-prediction-ml):** An ML model using socio-demographic data to identify high-risk patients.
-- 🧬 **[Genomics-to-Clinic](https://github.com/YOUR_USERNAME/precision-oncology):** A repository for bioinformatics pipelines tailored for African genomic diversity.
-- 🎥 **[HealthIntel-Code](https://github.com/YOUR_USERNAME/DrKrypto-HealthIntel):** Code samples and resources from my YouTube channel.
+- 🔬 **[Life Expectancy Analysis](https://github.com/DrKryptoMed/life_expectancy_analysis):** A Machine Learning Approach to Socio-Economic Health Drivers to predict Global longevity
 
 ---
 
@@ -70,6 +68,4 @@
 
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@DrKrypto_HealthIntel)
-
 </div>
