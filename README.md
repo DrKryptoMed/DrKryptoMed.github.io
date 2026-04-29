@@ -2,12 +2,12 @@
 
 # Ibrahim Mikail | The Physician-Scientist 🧬
   
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2E7D32&center=true&vCenter=true&width=500&lines=BSc+Anatomy+%7C+MSc+Public+Health;AI+%2F+ML+in+Oncology;Aspiring+Computational+Oncologist;Bridging+Medicine+%26+Tech" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2E7D32&center=true&vCenter=true&width=500&lines=BSc+Anatomy+%7C+MSc+Public+Health;AI+%2F+MLOps+in+Healthcare;Computational+&+Precision+Oncology;Leveraging+AI+To+Improve+Health+Outcomes" alt="Typing SVG" />
 
 ---
 
-### 🚀 Mission: Precision Oncology through Intelligence
-*Transforming cancer care by integrating Medicine and AI/ML Technology.*
+### 🚀 Mission: Healthcare through Intelligence
+*Transforming Chronic Disease & Cancer care  by integrating Medicine and AI/ML Technology.*
 
 [📊 My Portfolio](https://drkryptomed.github.io/) • [💼 LinkedIn](www.linkedin.com/in/ibrahim-mikail-b88477194)
 
@@ -18,7 +18,7 @@
 ## 👨‍💻 About Me
 - 🎓 **Clinical Base:** BSc in Anatomy, MSc in Public Health & current MBBS Student.
 - 🌍 **System Perspective:** Training in Genomics and Bioinformatics focusing on Cancer Dataset.
-- 🧪 **Digital Toolkit:** Certified in Data Analytics, currently mastering AI/ML for Healthcare and a fullstack vibecoder.
+- 🧪 **Digital Toolkit:** Certified in Data Science, currently mastering AI, Ml/MLOps for Healthcare and a fullstack Dev.
 - 🧬 **The Goal:** Utilizing an integrated approach in **Computational Oncology** to improve late-stage cancer prediction and personalized care.
 
 ---
