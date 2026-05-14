@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AuxiChron — Project Documentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f7f5f0;
+    --surface: #ffffff;
+    --surface2: #f0ede6;
+    --border: rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.15);
+    --text: #1a1916;
+    --text-muted: #6b6860;
+    --text-faint: #9c9a94;
+    --accent: #1a5c45;
+    --accent-light: #e8f3ee;
+    --accent-mid: #2d8a68;
+    --amber: #b06a00;
+    --amber-light: #fdf3e3;
+    --blue: #1a3f6b;
+    --blue-light: #e8f0fb;
+    --coral: #8b3a24;
+    --coral-light: #fdf0ec;
+    --purple: #4a3480;
+    --purple-light: #f0edfb;
+  }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Figtree', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(247,245,240,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 0.5px solid var(--border-strong);
+    padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 56px;
+  }
+  .nav-brand { font-family: 'DM Serif Display', serif; font-size: 1.1rem; letter-spacing: -0.02em; }
+  .nav-brand span { color: var(--accent-mid); }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+  .nav-links a { font-size: 13px; font-weight: 500; color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta {
+    font-size: 13px; font-weight: 500;
+    background: var(--accent); color: #fff;
+    padding: 7px 16px; border-radius: 6px;
+    text-decoration: none; transition: background 0.15s;
+  }
+  .nav-cta:hover { background: var(--accent-mid); }
+
+  /* HERO */
+  .hero {
+    max-width: 860px; margin: 0 auto;
+    padding: 5rem 2rem 3.5rem;
+  }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--accent-light); color: var(--accent);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 5px 12px; border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+  .hero-tag::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-mid); display: inline-block; }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    line-height: 1.1; letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  h1 em { font-style: italic; color: var(--accent-mid); }
+  .hero-sub {
+    font-size: 1.125rem; color: var(--text-muted); font-weight: 300;
+    max-width: 580px; margin-bottom: 2rem; line-height: 1.6;
+  }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+  .badge {
+    font-size: 12px; font-weight: 500;
+    padding: 4px 10px; border-radius: 4px;
+    border: 0.5px solid var(--border-strong);
+    color: var(--text-muted);
+    background: var(--surface);
+  }
+  .badge.status { background: var(--amber-light); color: var(--amber); border-color: rgba(176,106,0,0.2); }
+  .divider { width: 1px; height: 16px; background: var(--border-strong); }
+
+  /* LAYOUT */
+  .doc-wrap {
+    max-width: 860px; margin: 0 auto;
+    padding: 0 2rem 6rem;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  /* SIDEBAR TOC */
+  .toc {
+    position: sticky; top: 72px;
+    font-size: 13px;
+  }
+  .toc-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 0.75rem; }
+  .toc ul { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .toc a { color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 4px; display: block; transition: all 0.15s; }
+  .toc a:hover { color: var(--text); background: var(--surface2); }
+  .toc a.active { color: var(--accent); background: var(--accent-light); font-weight: 500; }
+
+  /* CONTENT */
+  .content section { margin-bottom: 3.5rem; }
+  .content h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.7rem; letter-spacing: -0.02em;
+    margin-bottom: 1rem; padding-bottom: 0.75rem;
+    border-bottom: 0.5px solid var(--border);
+    color: var(--text);
+  }
+  .content h3 { font-size: 1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; color: var(--text); }
+  .content p { color: var(--text-muted); margin-bottom: 0.75rem; font-size: 0.9375rem; }
+  .content p strong { color: var(--text); font-weight: 600; }
+
+  /* OVERVIEW CARDS */
+  .overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 1.25rem; }
+  .ov-card {
+    background: var(--surface); border: 0.5px solid var(--border);
+    border-radius: 10px; padding: 1.1rem;
+  }
+  .ov-card-icon {
+    width: 32px; height: 32px; border-radius: 7px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; margin-bottom: 0.7rem;
+  }
+  .ov-card-title { font-size: 0.8rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .ov-card-desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+  .ic-green { background: var(--accent-light); color: var(--accent); }
+  .ic-amber { background: var(--amber-light); color: var(--amber); }
+  .ic-blue { background: var(--blue-light); color: var(--blue); }
+  .ic-purple { background: var(--purple-light); color: var(--purple); }
+  .ic-coral { background: var(--coral-light); color: var(--coral); }
+
+  /* PATHWAY CARDS */
+  .pathway-list { display: flex; flex-direction: column; gap: 12px; margin-top: 1rem; }
+  .pathway-card {
+    background: var(--surface); border: 0.5px solid var(--border);
+    border-radius: 10px; padding: 1.1rem 1.25rem;
+    display: grid; grid-template-columns: 40px 1fr; gap: 1rem; align-items: start;
+  }
+  .pathway-num {
+    width: 32px; height: 32px; border-radius: 7px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500;
+    flex-shrink: 0;
+  }
+  .pathway-card h4 { font-size: 0.875rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .pathway-card p { font-size: 0.8125rem; color: var(--text-muted); line-height: 1.55; margin: 0; }
+  .pathway-card .pathway-tag {
+    display: inline-block; font-size: 11px; font-weight: 500;
+    padding: 2px 8px; border-radius: 3px; margin-top: 0.5rem;
+  }
+
+  /* FEATURE BLOCKS */
+  .feature-block {
+    background: var(--surface); border: 0.5px solid var(--border);
+    border-radius: 10px; padding: 1.25rem; margin-bottom: 12px;
+  }
+  .feature-block h4 { font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px; }
+  .feature-block p { font-size: 0.8125rem; color: var(--text-muted); margin: 0; line-height: 1.6; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .dot-green { background: var(--accent-mid); }
+  .dot-amber { background: var(--amber); }
+  .dot-blue { background: #2a6fc9; }
+  .dot-purple { background: var(--purple); }
+
+  /* STACK TABLE */
+  .stack-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 1rem; }
+  .stack-item {
+    background: var(--surface); border: 0.5px solid var(--border);
+    border-radius: 8px; padding: 0.9rem 1rem;
+    display: flex; align-items: flex-start; gap: 10px;
+  }
+  .stack-layer { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 3px; }
+  .stack-tech { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; color: var(--text); line-height: 1.6; }
+
+  /* CALLOUT */
+  .callout {
+    border-left: 2px solid var(--accent-mid);
+    background: var(--accent-light);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+  }
+  .callout p { font-size: 0.875rem; color: var(--accent); margin: 0; line-height: 1.6; }
+  .callout strong { color: var(--accent); }
+
+  .callout-amber {
+    border-left-color: var(--amber);
+    background: var(--amber-light);
+  }
+  .callout-amber p { color: var(--amber); }
+
+  /* FOOTER */
+  footer {
+    border-top: 0.5px solid var(--border-strong);
+    padding: 2rem;
+    text-align: center;
+    font-size: 13px; color: var(--text-faint);
+  }
+  footer a { color: var(--accent-mid); text-decoration: none; }
+
+  /* DEMO BUTTON */
+  .demo-btn-wrap { margin-top: 1.25rem; display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--accent); color: #fff;
+    font-size: 14px; font-weight: 500;
+    padding: 10px 20px; border-radius: 7px; text-decoration: none;
+    transition: background 0.15s;
+  }
+  .btn-primary:hover { background: var(--accent-mid); }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--surface); color: var(--text);
+    font-size: 14px; font-weight: 500;
+    padding: 10px 20px; border-radius: 7px; text-decoration: none;
+    border: 0.5px solid var(--border-strong);
+    transition: background 0.15s;
+  }
+  .btn-secondary:hover { background: var(--surface2); }
+
+  @media (max-width: 680px) {
+    .doc-wrap { grid-template-columns: 1fr; }
+    .toc { display: none; }
+    .overview-grid, .stack-grid { grid-template-columns: 1fr; }
+    nav .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Auxi<span>Chron</span></div>
+  <ul class="nav-links">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#pathways">Pathways</a></li>
+    <li><a href="#interfaces">Interfaces</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#context">Context</a></li>
+  </ul>
+  <a href="https://auxichronhealth.lovable.app" target="_blank" class="nav-cta">Live demo →</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">Project documentation</div>
+  <h1>AuxiChron —<br /><em>Your Digital Health Twin</em></h1>
+  <p class="hero-sub">A fullstack agentic clinical operating system for chronic care. Built to bridge the gap between patients, clinicians, and the data that connects them.</p>
+  <div class="hero-meta">
+    <span class="badge">Ibrahim Mikail</span>
+    <div class="divider"></div>
+    <span class="badge">Healthcare AI · MLOps · Fullstack</span>
+    <div class="divider"></div>
+    <span class="badge status">⏸ Paused — functional prototype</span>
+  </div>
+</div>
+
+<div class="doc-wrap">
+  <aside class="toc">
+    <div class="toc-label">On this page</div>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#pathways">Agentic gateway</a></li>
+      <li><a href="#interfaces">Interfaces</a></li>
+      <li><a href="#stack">Technical stack</a></li>
+      <li><a href="#context">Clinical context</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>
+        AuxiChron is an AI-powered healthcare platform designed for patients living with chronic conditions who need continuous, longitudinal care. It is not a symptom checker or a simple scheduling tool — it functions as a <strong>coordinated agentic system</strong> where every patient interaction is routed, analyzed, and acted on intelligently.
+      </p>
+      <p>
+        The system is built around a central Gemini-powered coordinator that classifies incoming inputs and dispatches them to one of four specialized clinical pathways. It surfaces insights to both patients and clinicians in real time, grounded in Nigerian clinical standards and designed to work across connectivity levels — from a browser to a low-resource WhatsApp bot.
+      </p>
+
+      <div class="overview-grid">
+        <div class="ov-card">
+          <div class="ov-card-icon ic-green">⚡</div>
+          <div class="ov-card-title">Agentic routing engine</div>
+          <div class="ov-card-desc">Gemini coordinator classifies all inputs and dispatches to 4 specialized clinical pathways automatically.</div>
+        </div>
+        <div class="ov-card">
+          <div class="ov-card-icon ic-blue">🩺</div>
+          <div class="ov-card-title">Provider command center</div>
+          <div class="ov-card-desc">Clinician dashboard with AI-ranked triage queue, vitals trends, and SOAP note generation.</div>
+        </div>
+        <div class="ov-card">
+          <div class="ov-card-icon ic-amber">🔐</div>
+          <div class="ov-card-title">Patient sovereign vault</div>
+          <div class="ov-card-desc">Encrypted longitudinal health record owned by the patient — accessible via web or WhatsApp.</div>
+        </div>
+        <div class="ov-card">
+          <div class="ov-card-icon ic-purple">🌍</div>
+          <div class="ov-card-title">Built for Nigeria</div>
+          <div class="ov-card-desc">Clinical logic grounded in the Nigerian Standard Treatment Guidelines (NSTG 2022).</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATHWAYS -->
+    <section id="pathways">
+      <h2>Agentic gateway</h2>
+      <p>
+        The core of the system is a <strong>Gemini-powered coordinator</strong> that receives all patient inputs — text, voice notes, uploaded documents — and routes them to the appropriate clinical pathway. This is the agentic layer: it decides what kind of interaction is happening and delegates accordingly.
+      </p>
+
+      <div class="pathway-list">
+        <div class="pathway-card">
+          <div class="pathway-num ic-green" style="border-radius:7px;">01</div>
+          <div>
+            <h4>Clinical triage</h4>
+            <p>A structured symptom-gathering flow anchored to the <strong>Nigerian Standard Treatment Guidelines (NSTG 2022)</strong>. The system assesses urgency, assigns a priority score, and books the patient into the appropriate consultation tier — emergency, urgent, or routine.</p>
+            <span class="pathway-tag ic-green" style="border-radius:3px; font-size:11px; padding:2px 8px;">Pathway 1 — Triage</span>
+          </div>
+        </div>
+
+        <div class="pathway-card">
+          <div class="pathway-num ic-blue" style="border-radius:7px;">02</div>
+          <div>
+            <h4>Diagnostic summarization</h4>
+            <p>An <strong>OCR + AI pipeline</strong> that ingests lab reports, biopsy results, and imaging summaries and converts them into plain-language summaries. Patients receive a readable interpretation; clinicians receive the structured output for their records.</p>
+            <span class="pathway-tag ic-blue" style="border-radius:3px; font-size:11px; padding:2px 8px;">Pathway 2 — Diagnostics</span>
+          </div>
+        </div>
+
+        <div class="pathway-card">
+          <div class="pathway-num ic-amber" style="border-radius:7px;">03</div>
+          <div>
+            <h4>Pharmacy adherence tracking</h4>
+            <p>A chronic medication refill tracker that monitors prescription timelines and flags <strong>"Adherence Gaps"</strong> when a patient goes more than 30 days without a documented refill. Triggers automated nudges and escalates to the clinician dashboard.</p>
+            <span class="pathway-tag ic-amber" style="border-radius:3px; font-size:11px; padding:2px 8px;">Pathway 3 — Adherence</span>
+          </div>
+        </div>
+
+        <div class="pathway-card">
+          <div class="pathway-num ic-purple" style="border-radius:7px;">04</div>
+          <div>
+            <h4>Mental health sentiment monitoring</h4>
+            <p>An <strong>NLP-driven module</strong> that continuously analyzes the sentiment of patient messages and clinical notes. Flags "Treatment Fatigue" or emotional distress signals, routing them to a clinician alert — ensuring mental health is treated as a clinical variable, not an afterthought.</p>
+            <span class="pathway-tag ic-purple" style="border-radius:3px; font-size:11px; padding:2px 8px;">Pathway 4 — Mental health</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p><strong>Design intent:</strong> Each pathway is specialized and purpose-built, but all share a unified data layer. A patient flagged for adherence gaps in Pathway 3 will have that context surface in the clinician's triage queue and in the mental health sentiment score — the system reasons holistically.</p>
+      </div>
+    </section>
+
+    <!-- INTERFACES -->
+    <section id="interfaces">
+      <h2>Interfaces</h2>
+
+      <h3>Provider command center</h3>
+      <p>The clinician's interface is designed as a decision-support tool, not a scheduling list. It is built to surface what matters, ranked by clinical significance.</p>
+
+      <div class="feature-block">
+        <h4><span class="dot dot-green"></span> AI-ranked triage queue</h4>
+        <p>A dynamic "Smart Waitlist" that ranks patients by a composite AI priority score — combining vitals severity, medication adherence gaps, and mental health sentiment flags — rather than simple arrival time. First-come-first-served is replaced by first-need-first-served.</p>
+      </div>
+      <div class="feature-block">
+        <h4><span class="dot dot-blue"></span> Longitudinal vitals trends</h4>
+        <p>Interactive 30-day trend charts for key vitals (blood pressure, glucose) layered against medication refill logs, making the correlation between adherence and clinical outcomes directly visible to the clinician.</p>
+      </div>
+      <div class="feature-block">
+        <h4><span class="dot dot-amber"></span> AI clinical scribe</h4>
+        <p>Transcribes live consultations in real time and auto-generates structured clinical notes in <strong>SOAP format</strong> (Subjective, Objective, Assessment, Plan). Reduces documentation burden so the clinician can focus on the patient.</p>
+      </div>
+      <div class="feature-block">
+        <h4><span class="dot dot-purple"></span> Human-in-the-loop controls</h4>
+        <p>All AI-suggested treatment adjustments or referrals surface as actionable cards with Accept / Dismiss toggles. The clinician is always the final decision-maker. AI augments, not replaces.</p>
+      </div>
+
+      <h3>Patient sovereign portal</h3>
+      <p>The patient-facing interface is built around two principles: simplicity of access and ownership of data.</p>
+
+      <div class="feature-block">
+        <h4><span class="dot dot-green"></span> Health pulse dashboard</h4>
+        <p>A minimalist home screen featuring a circular Adherence/Trust ring that visualizes the patient's current engagement score at a glance, and a one-tap button to begin a triage session.</p>
+      </div>
+      <div class="feature-block">
+        <h4><span class="dot dot-blue"></span> Sovereign health vault</h4>
+        <p>A longitudinal, encrypted record of all encounters, lab results, prescriptions, and AI summaries — owned by the patient, not the provider. Patients can share selected records with any clinician.</p>
+      </div>
+      <div class="feature-block">
+        <h4><span class="dot dot-amber"></span> Multi-channel access</h4>
+        <p>Patients interact via the web app or a <strong>low-resource WhatsApp bot</strong>. All interactions sync to the same Supabase backend in real time — ensuring the system works even on feature phones with limited data.</p>
+      </div>
+      <div class="feature-block">
+        <h4><span class="dot dot-purple"></span> Telemedicine integration</h4>
+        <p>Built-in video and audio consultation capabilities for virtual visits, with consultation fee payment scaffolded via Paystack and Flutterwave.</p>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack">
+      <h2>Technical stack</h2>
+      <p>AuxiChron is built fullstack, from model inference to UI. Every layer is production-oriented — designed to be scalable, not just demonstrable.</p>
+
+      <div class="stack-grid">
+        <div class="stack-item">
+          <div>
+            <div class="stack-layer">AI / Agents</div>
+            <div class="stack-tech">Gemini API<br />NLP (sentiment)<br />OCR pipeline</div>
+          </div>
+        </div>
+        <div class="stack-item">
+          <div>
+            <div class="stack-layer">Backend</div>
+            <div class="stack-tech">FastAPI<br />Supabase (Postgres + Auth)<br />Realtime subscriptions</div>
+          </div>
+        </div>
+        <div class="stack-item">
+          <div>
+            <div class="stack-layer">Frontend</div>
+            <div class="stack-tech">React (Lovable)<br />Responsive web app<br />WhatsApp bot interface</div>
+          </div>
+        </div>
+        <div class="stack-item">
+          <div>
+            <div class="stack-layer">Payments</div>
+            <div class="stack-tech">Paystack<br />Flutterwave<br />Consultation + pharmacy</div>
+          </div>
+        </div>
+        <div class="stack-item">
+          <div>
+            <div class="stack-layer">Telemedicine</div>
+            <div class="stack-tech">WebRTC<br />Video + audio<br />In-platform calls</div>
+          </div>
+        </div>
+        <div class="stack-item">
+          <div>
+            <div class="stack-layer">Data / Security</div>
+            <div class="stack-tech">Encrypted health vault<br />Row-level security<br />Patient-owned records</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-amber" style="margin-top:1.5rem;">
+        <p><strong>Architecture note:</strong> Real-time data sync ensures that a vital logged by a patient on their phone appears instantly on the clinician's dashboard — no refresh, no delay. The entire system shares one data source of truth.</p>
+      </div>
+    </section>
+
+    <!-- CONTEXT -->
+    <section id="context">
+      <h2>Clinical context</h2>
+      <p>
+        AuxiChron was built with the Nigerian clinical environment explicitly in mind — not as an afterthought. The triage logic is grounded in the <strong>Nigerian Standard Treatment Guidelines (NSTG 2022)</strong>, the official clinical reference for Nigerian healthcare facilities.
+      </p>
+      <p>
+        This matters because most AI healthcare tools are trained on, and designed for, Western clinical workflows and demographics. AuxiChron takes a different approach: the priority scoring, drug adherence thresholds, and triage escalation criteria are all calibrated to the Nigerian context.
+      </p>
+
+      <div class="callout">
+        <p><strong>On model fairness:</strong> The AI-ranked triage queue is itself an equity intervention. By replacing first-come-first-served with a need-based priority score that factors in adherence, mental health, and vitals — the system structurally reduces the advantage of proximity and scheduling access. Bias is considered a clinical variable, not a technical footnote.</p>
+      </div>
+
+      <h3>Who it's built for</h3>
+      <p>
+        <strong>Chronic disease patients</strong> — particularly those managing hypertension, diabetes, or other conditions requiring long-term medication adherence and monitoring. The system is designed to reduce the gap between clinic visits, not just facilitate them.
+      </p>
+      <p>
+        <strong>Clinicians in under-resourced settings</strong> — where patient loads are high, documentation time is scarce, and decision support is minimal. The AI scribe and triage queue are designed to reclaim clinician time, not add to it.
+      </p>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap">
+      <h2>Roadmap</h2>
+      <p>AuxiChron is currently a functional prototype, paused pending funding and team expansion. The core agentic system, provider dashboard, patient portal, and WhatsApp integration are all built and functional.</p>
+
+      <div class="feature-block">
+        <h4><span class="dot dot-green"></span> Completed</h4>
+        <p>Agentic gateway (all 4 pathways) · Provider command center · Patient sovereign portal · WhatsApp bot sync · FastAPI + Supabase backend · Paystack/Flutterwave scaffolding · WebRTC telemedicine · NSTG-grounded triage logic</p>
+      </div>
+      <div class="feature-block">
+        <h4><span class="dot dot-amber"></span> Next phase</h4>
+        <p>Clinical validation with medical supervisors · EHR integration (DHIS2) · Wearable device data ingestion · Expanded NLP model fine-tuned on Nigerian clinical language · Mobile-native app (React Native)</p>
+      </div>
+      <div class="feature-block">
+        <h4><span class="dot dot-blue"></span> Open to collaboration</h4>
+        <p>Looking for clinical partners, health-tech co-founders, and funding opportunities to move from prototype to pilot deployment in a Nigerian healthcare facility.</p>
+      </div>
+
+      <div class="demo-btn-wrap">
+        <a href="https://auxichronhealth.lovable.app" target="_blank" class="btn-primary">View live demo →</a>
+        <a href="https://github.com/DrKryptoMed" target="_blank" class="btn-secondary">GitHub profile</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Built by <a href="https://drkryptomed.github.io" target="_blank">Ibrahim Mikail</a> · Medical Student, Data Scientist, Healthcare AI Engineer · <a href="mailto:">Get in touch</a>
+</footer>
+
+<script>
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.toc a');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.toc a[href="#${e.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
