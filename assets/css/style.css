@@ -98,7 +98,7 @@ header p {
 
 /* --- 4. Navigation --- */
 nav {
-    background-color: rgba(26, 42, 76, 0.95); /* Adjusted for new primary color */
+    background-color: rgba(26, 42, 76, 0.95);
     backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
@@ -217,12 +217,12 @@ nav ul li a:hover::after {
 
 .project-card img {
     width: 100%;
-    height: 220px;
+    height: 200px; /* ← slightly reduced from 220px */
     object-fit: cover;
 }
 
 .project-card-content {
-    padding: 30px;
+    padding: 24px 28px; /* ← reduced from 30px */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -230,15 +230,16 @@ nav ul li a:hover::after {
 
 .project-card-content h3 {
     font-family: var(--font-heading);
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 1.5rem; /* ← reduced from 1.8rem */
+    margin-bottom: 10px; /* ← reduced from 15px */
     color: var(--primary-color);
 }
 
 .project-card-content p {
     color: var(--light-text-color);
-    margin-bottom: 30px;
+    margin-bottom: 22px; /* ← reduced from 30px */
     flex-grow: 1;
+    font-size: 0.95rem;
 }
 
 .project-buttons {
@@ -279,10 +280,9 @@ nav ul li a:hover::after {
 }
 
 
-/* --- 6. Tabular Skills Section --- */
 /* --- 6. Modernized Skills Section --- */
 #skills .container {
-    max-width: 1200px; /* Slightly wider for the grid */
+    max-width: 1200px;
 }
 
 .skills-grid {
@@ -295,7 +295,7 @@ nav ul li a:hover::after {
 .skill-card {
     background: var(--card-bg-color);
     padding: 30px;
-    border-radius: 12px; /* Smoother corners for a modern feel */
+    border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, border-color 0.3s ease;
     border: 1px solid #edf2f7;
@@ -329,7 +329,6 @@ nav ul li a:hover::after {
     margin: 0;
 }
 
-/* The "Pill" Tags */
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
@@ -337,7 +336,7 @@ nav ul li a:hover::after {
 }
 
 .skill-tags span {
-    background: #f1f5f9; /* Light slate gray */
+    background: #f1f5f9;
     color: var(--secondary-color);
     padding: 8px 16px;
     border-radius: 25px;
@@ -354,17 +353,6 @@ nav ul li a:hover::after {
     cursor: default;
 }
 
-/* Update Responsive Design for Skills */
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr; /* Stack on mobile */
-        gap: 20px;
-    }
-    
-    .skill-card {
-        padding: 20px;
-    }
-}
 /* --- 7. Contact Form --- */
 #contact .container {
     max-width: 800px;
@@ -406,7 +394,7 @@ nav ul li a:hover::after {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(41, 182, 246, 0.25); /* Adjusted for new accent color */
+    box-shadow: 0 0 0 3px rgba(41, 182, 246, 0.25);
 }
 
 .contact-form button.btn {
@@ -446,18 +434,48 @@ footer p {
     header h1 {
         font-size: 2.8rem;
     }
-    
+
     .about-content {
         flex-direction: column;
         text-align: center;
     }
 
     #projects .container {
-        padding: 0 5px; 
+        padding: 0 5px;
     }
 
+    /* ✅ FIXED: single column on mobile */
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /* ✅ Trimmed card on mobile */
+    .project-card img {
+        height: 160px;
+    }
+
+    .project-card-content {
+        padding: 18px 20px;
+    }
+
+    .project-card-content h3 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .project-card-content p {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skill-card {
+        padding: 20px;
     }
 
     .skills-table {
