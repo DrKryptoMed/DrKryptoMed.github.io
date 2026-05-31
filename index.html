@@ -1,282 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--💡UPDATE: Change the title to your name-->
-    <title> Ibrahim Mikail | Healthcare Data Science Portfolio </title>
-      
-    <!--💡UPDATE: Add your favicon here. You can generate one at realfavicongenerator.net-->
-    <link rel="icon" type="image/png" href="/dkmfavicon.png">
-    <link rel="apple-touch-icon" href="/dkmfavicon.png">
-    
-    <!-- Google Fonts for Elegant Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- Your Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ibrahim Mikail — Healthcare AI Engineer</title>
+  <link rel="icon" type="image/png" href="/dkmfavicon.png"/>
+  <link rel="apple-touch-icon" href="/dkmfavicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
 
-<!-- HEADER SECTION -->
-<header>
-    <div class="container">
-        <!--💡UPDATE: Change to your name and title-->
-        <h1> Ibrahim Mikail </h1>
-        <p> Healthcare AI Engineer & Medical Student | Building AI and ML Systems at the Intersection of Healthcare and technology </p>
-        <div class="social-links">
-            <!--💡UPDATE: Add your social media links and CV file-->
-            <a href="https://www.linkedin.com/in/ibrahim-mikail-b88477194/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/DrKryptoMed" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="Ibrahim_Mikail_CV.docx.pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
-            <a href="https://www.kaggle.com/mikailibrahimaremu" target="_blank" title="Kaggle"><i class="fab fa-kaggle"></i></a>
-            <a href="https://orcid.org/0009-0009-7869-7585" target="_blank" title="Orcid"><i class="fab fa-orcid"></i></a>  
-        </div>
-    </div>
-</header>
-
-<!-- NAVIGATION -->
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+<!-- NAV -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">IM<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#deepdive">Deep Dive</a></li>
+      <li><a href="#builds">What I Build</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="Ibrahim_Mikail_CV.docx.pdf" download class="nav-cv"><i class="fas fa-download"></i> CV</a>
+  </div>
 </nav>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="section">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <!--💡UPDATE: Change the image to your own profile photo in assets/images/-->
-            <img src="assets/images/profile photo.png" alt="Ibrahim Aremu Mikail" class="profile-photo">
-            <div class="about-text">
-                <!--💡UPDATE: Write your own 'About Me' text here-->
-                <p>​​I don't just analyze healthcare data, I build the systems that act on it.
-                <p>I'm Ibrahim Mikail, a medical student with a background in Public Health (MSc), Anatomy(BSc) and a full professional practice in Data Science, AI/ML, and MLOps. That combination is rare, and I use it deliberately, to build healthcare AI that is both technically rigorous and clinically grounded.</p>
-                <p>My work has evolved from classical data analysis and predictive modeling into designing and deploying end-to-end agentic AI systems for healthcare including LLM-powered clinical tools, RAG pipelines for medical knowledge retrieval, ML inference pipelines with MLOps infrastructure, and clinical decision support applications built fullstack from model to UI.</p>
-                <p>What sets my perspective apart is that I understand the data and the disease. I can read an ICD-10 code, interpret a pathology report, and also architect the pipeline that processes it at scale. I think about model fairness not as a checkbox, but as a clinical imperative because I've seen what biased tools cost patients.</p>
-                <p>My current focus areas include vascular disease AI, oncological outcome modeling, health equity in algorithmic systems, and agentic workflows for clinical settings. I build with Python, deploy on cloud infrastructure, and ship production grade applications and not just notebooks.</p>
-                <p>I'm not waiting to finish medical school to do meaningful work. I'm doing it now.</p>
-                
-            </div>
-        </div>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span>Open to collaboration</div>
+    <h1 class="hero-name">
+      <span class="n1">Ibrahim</span>
+      <span class="n2">Aremu</span>
+      <span class="n3">Mikail</span>
+    </h1>
+    <div class="hero-roles">
+      <span class="role-fixed">Healthcare AI Engineer</span>
+      <span class="role-sep">·</span>
+      <span id="role-type"></span><span class="cursor">|</span>
     </div>
+    <p class="hero-sub">Building agentic systems at the intersection of<br/>medicine and machine intelligence.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="cta-primary">View Projects</a>
+      <a href="#contact" class="cta-secondary">Get in Touch</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/ibrahim-mikail-b88477194/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/DrKryptoMed" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.kaggle.com/mikailibrahimaremu" target="_blank"><i class="fab fa-kaggle"></i></a>
+      <a href="https://orcid.org/0009-0009-7869-7585" target="_blank"><i class="fab fa-orcid"></i></a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue"><i class="fas fa-arrow-down"></i></a>
 </section>
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="section">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
+<!-- STATS BAR -->
+<div class="stats-bar reveal">
+  <div class="stats-inner">
+    <div class="sitem"><span class="sval">3rd Year</span><span class="slbl">MBBS Student</span></div>
+    <div class="sdiv"></div>
+    <div class="sitem"><span class="sval">MSc</span><span class="slbl">Public Health</span></div>
+    <div class="sdiv"></div>
+    <div class="sitem"><span class="sval">5+</span><span class="slbl">AI Projects Shipped</span></div>
+    <div class="sdiv"></div>
+    <div class="sitem"><span class="sval">2</span><span class="slbl">Years in Practice</span></div>
+    <div class="sdiv"></div>
+    <div class="sitem"><span class="sval">4</span><span class="slbl">AI Agents Built</span></div>
+  </div>
+</div>
 
-            <!--💡UPDATE: Replace this with your own project. Add as many as you like!-->
-            <!-- Project 1 -->
-             <div class="project-card">
-                <img src="assets/images/auxichron.png" alt="Project Four Preview">
-                <div class="project-card-content">
-                    <h3>AuxiChron — Your Digital Health Twin</h3>
-                    <p>An agentic clinical OS for chronic care, built fullstack with AI-powered triage, longitudinal patient monitoring, and a provider command center.</p>
-                    <div class="project-buttons">
-                        <a href="auxichron-documentation.html" target="_blank" class="btn">Documentation</a>
-                        <a href="https://auxichronhealth.lovable.app" target="_blank" class="btn btn-secondary">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <!--💡UPDATE: Add a preview image of your project to assets/images/ -->
-                <img src="assets/images/bct-llm-agent.png" alt="Project One Preview" class="project1pic">
-                <div class="project-card-content">
-                    <h3>BCT LLM Agent</h3>
-                    <p>RAG-powered system that simulates personalized user reviews and provides intelligent recommendations through a "reasoning-before-recommending" workflow. It stands out by integrating a Nigerian contextualization layer that authentically mirrors local code-switching, cultural markers, and pricing psychology</p>
-                    <div class="project-buttons">
-                        <!--💡UPDATE: Add link to your project's code/documentation on GitHub-->
-                        <a href="BCT_LLM_Agent_Solution_Paper.pdf" target="_blank" class="btn">Documentation</a>
-                        <!--💡UPDATE: Add link to your live dashboard (e.g., Power BI, Tableau Public)-->
-                        <a href="https://huggingface.co/spaces/DrKryptoMed/bct-llm-agent" target="_blank" class="btn btn-secondary">Test Model</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="assets/images/cancer.png" alt="Project Three Preview">
-                <div class="project-card-content">
-                    <h3>OncoSight-SSA</h3>
-                    <p>Multi-Agent XAI for Cancer Care in Sub-Saharan Africa</p>
-                    <div class="project-buttons">
-                        <a href="oncosight-ssa-documentation.html" target="_blank" class="btn">Documentation</a>
-                        <a href="oncosight-ssa-documentation.html" target="_blank" class="btn btn-secondary">In progress(view roadmap)</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <!--💡UPDATE: Add a preview image of your project to assets/images/ -->
-                <img src="assets/images/project1.jpg" alt="Project One Preview" class="project1pic">
-                <div class="project-card-content">
-                    <h3>Healthcare Readmission rate & Root cause Analysis</h3>
-                    <p>Built Power BI dashboards analyzing hospital readmission drivers, KPIs, and equity trends.</p>
-                    <div class="project-buttons">
-                        <!--💡UPDATE: Add link to your project's code/documentation on GitHub-->
-                        <a href="readmissiondocumentation.html" target="_blank" class="btn">Documentation</a>
-                        <!--💡UPDATE: Add link to your live dashboard (e.g., Power BI, Tableau Public)-->
-                        <a href="https://drive.google.com/file/d/1YF82EGCOMrObwPJF_j8oB3DR44bay79A/view?usp=sharing" target="_blank" class="btn btn-secondary">View Dashboard</a>
-                    </div>
-                </div>
-            </div>
-
-            
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="assets/images/life_expectancy_analysis.png" alt="Project Two Preview">
-                <div class="project-card-content">
-                    <h3>Life Expectancy Analysis</h3>
-                    <p>Predicting Global Longevity: A Machine Learning Approach to Socio-Economic Health Drivers</p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/DrKryptoMed/life_expectancy_analysis" target="_blank" class="btn">Documentation</a>
-                        <a href="https://lifeexpectancyanalysis.streamlit.app" target="_blank" class="btn btn-secondary">View Model Demo</a>
-                    </div>
-                </div>
-            </div>
-
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <div class="container">
+    <div class="sec-label">01 — About</div>
+    <div class="about-wrap">
+      <div class="about-left">
+        <div class="photo-box">
+          <img src="assets/images/profile photo.png" alt="Ibrahim Aremu Mikail"/>
+          <div class="photo-ring"></div>
         </div>
+        <div class="about-meta">
+          <div class="meta-row"><i class="fas fa-map-marker-alt"></i><span>Abeokuta, Nigeria</span></div>
+          <div class="meta-row"><i class="fas fa-stethoscope"></i><span>EKOUNI Medical School</span></div>
+          <div class="meta-row"><i class="fas fa-code"></i><span>drkryptomed.github.io</span></div>
+        </div>
+      </div>
+      <div class="about-right">
+        <h2>I don't just analyze healthcare data —<br/><em>I build the systems that act on it.</em></h2>
+        <p>I'm Ibrahim Mikail, a medical student with an MSc in Public Health, BSc in Anatomy, and a full professional practice in Data Science, AI/ML, and MLOps. That combination is rare, and I use it deliberately  to build healthcare AI that is both technically rigorous and clinically grounded.</p>
+        <p>My work has evolved from classical analysis and predictive modeling into designing and deploying end-to-end agentic AI systems: LLM-powered clinical tools, RAG pipelines for medical knowledge retrieval, ML inference pipelines with MLOps infrastructure, and clinical decision support applications built fullstack from model to UI.</p>
+        <p>What sets my perspective apart is that I understand the data <em>and</em> the disease. I can read an ICD-10 code, interpret a pathology report, and architect the pipeline that processes it at scale. I think about model fairness not as a checkbox, but as a clinical imperative, because I've seen what biased tools cost patients.</p>
+        <p class="about-close">My focus: vascular disease AI, Chronic disease modeling, health equity in algorithmic systems, and agentic workflows for clinical settings. <strong>I'm not waiting to finish medical school to do meaningful work. I'm doing it now.</strong></p>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- SKILLS SECTION -->
-<section id="skills" class="section">
-    <div class="container">
-        <h2 class="section-title">Technical Skillset</h2>
-        <div class="skills-grid">
-            
-            <div class="skill-card">
-                <div class="skill-card-header">
-                    <i class="fas fa-brain"></i>
-                    <h3>Data Science & AI</h3>
-                </div>
-                <div class="skill-tags">
-                    <span>Python (ML/AI)</span>
-                    <span>LangChain / LangGraph</span>
-                    <span>Predictive Modeling</span>
-                    <span>RAG</span>
-                    <span>Agentic Systems</span>
-                    <span>NLP in Healthcare</span>
-                </div>
-            </div>
+<!-- DEEP DIVE -->
+<section id="deepdive" class="section reveal">
+  <div class="container">
+    <div class="sec-label">02 — Deep Dive</div>
+    <h2 class="sec-heading">How I Think About Healthcare AI</h2>
+    <p class="sec-sub">Questions recruiters and collaborators usually ask, answered honestly.</p>
+    <div class="dd-list">
 
-            <div class="skill-card">
-                <div class="skill-card-header">
-                    <i class="fas fa-microscope"></i>
-                    <h3>Research & Epi</h3>
-                </div>
-                <div class="skill-tags">
-                    <span>Precision Oncology</span>
-                    <span>Genomics</span>
-                    <span>Study Design (RCT/Cohort)</span>
-                    <span>ICD-10 Coding</span>
-                    <span>Systematic Reviews</span>
-                    <span>Meta-Analysis</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-card-header">
-                    <i class="fas fa-calculator"></i>
-                    <h3>Biostatistics & Data</h3>
-                </div>
-                <div class="skill-tags">
-                    <span>Advanced SQL</span>
-                    <span>SPSS / Stata / SAS</span>
-                    <span>Generalized Linear Models</span>
-                    <span>Multilevel Modeling</span>
-                    <span>Risk Adjustment (HCC)</span>
-                    <span>AWS Cloud</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-card-header">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Viz & Deployment</h3>
-                </div>
-                <div class="skill-tags">
-                    <span>Power BI</span>
-                    <span>HuggingFace</span>
-                    <span>Streamlit</span>
-                    <span>React Native</span>
-                    <span>Full-stack</span>
-                    <span>Git / GitHub</span>
-                    <span>FastAPI</span>
-                    <span>Docker</span>
-                </div>
-            </div>
-
+      <div class="dd-item">
+        <button class="dd-q" aria-expanded="false">
+          How do you approach clinical AI problems differently from standard ML?
+          <i class="fas fa-plus dd-ico"></i>
+        </button>
+        <div class="dd-a">
+          <p>I start with the clinical workflow, not the dataset.</p>
+          <p>Before touching data, I ask: where does this decision actually get made, who makes it, and what happens when the model is wrong? In healthcare, a false negative in a cancer screening model is not a metric. It is a missed diagnosis. That changes everything about how I frame the problem, choose my evaluation criteria, and design the output.</p>
+          <p>My medical training means I can read the source data the way a clinician would. I know what an ICD-10 code actually represents in practice, what a pathology report is telling you beyond the label, and where EMR data is systematically unreliable. That context shapes every modeling decision I make, and it's context most ML engineers don't have.</p>
         </div>
+      </div>
+
+      <div class="dd-item">
+        <button class="dd-q" aria-expanded="false">
+          How do you think about model fairness and health equity in AI systems?
+          <i class="fas fa-plus dd-ico"></i>
+        </button>
+        <div class="dd-a">
+          <p>I treat fairness as a clinical safety requirement, not a compliance checkbox.</p>
+          <p>Biased clinical AI doesn't produce lower accuracy scores. It produces worse care for specific populations, often the ones already underserved. Pulse oximeters that overestimate SpO2 in darker skin tones. Sepsis prediction models trained on populations that don't reflect the patients they're deployed on. These are not edge cases, they are systematic failures.</p>
+          <p>In practice, I evaluate demographic parity and calibration across subgroups as a mandatory step, not an afterthought. I also think carefully about what the training data is actually measuring. Because in healthcare, the data itself often encodes historical disparities. Correcting a model's outputs without addressing its inputs is not fairness work.</p>
+        </div>
+      </div>
+
+      <div class="dd-item">
+        <button class="dd-q" aria-expanded="false">
+          What does a production-ready healthcare AI system look like to you?
+          <i class="fas fa-plus dd-ico"></i>
+        </button>
+        <div class="dd-a">
+          <p>Production-ready means a clinician can trust it, audit it, and override it.</p>
+          <p>Technically, I design for: containerized inference with FastAPI and Docker, CI/CD for model updates, drift monitoring, and rollback capability. But in healthcare specifically, production-ready also means the system has an explainability layer like SHAP, LIME, or counterfactual explanations that lets a clinician understand why the model flagged a patient before they act on it.</p>
+          <p>A black-box output in a clinical setting is not just unhelpful. It is unsafe. The clinician needs to be able to say "the model recommended this because of X, and I disagree because of Y." That override loop is not a failure of the AI — it is how responsible clinical decision support is supposed to work.</p>
+        </div>
+      </div>
+
+      <div class="dd-item">
+        <button class="dd-q" aria-expanded="false">
+          Why do agentic AI systems matter specifically in clinical settings?
+          <i class="fas fa-plus dd-ico"></i>
+        </button>
+        <div class="dd-a">
+          <p>Because clinical care is not a single prediction. It is a sequence of decisions that depend on each other.</p>
+          <p>A patient presenting with symptoms needs risk stratification, then facility routing, then a referral plan, then compliance support. These are four distinct tasks with four distinct data requirements. A single model cannot do all of them well, but an agentic system can. Because each agent specialises, and the outputs of one inform the inputs of the next.</p>
+          <p>This is the architecture I built in OncoSight-SSA: four coordinated agents handling cancer screening, facility mapping, referral recommendation, and compliance prediction in sequence. The clinical pathway becomes the pipeline.</p>
+        </div>
+      </div>
+
+      <div class="dd-item">
+        <button class="dd-q" aria-expanded="false">
+          How do you handle AI deployment in low-resource or low-data environments?
+          <i class="fas fa-plus dd-ico"></i>
+        </button>
+        <div class="dd-a">
+          <p>Low-resource settings require more careful engineering, not simpler models.</p>
+          <p>In Sub-Saharan Africa, the context I work in, you often face sparse clinical records, inconsistent documentation, missing demographic variables, and infrastructure that can't support heavy inference pipelines. You cannot just take a model trained on Western EHR data and deploy it. The data environment, disease burden, and failure modes are fundamentally different.</p>
+          <p>My approach: start with the data you actually have, not the data you wish you had. Design explicit missing data strategies. Use demographically appropriate training sets. Build for the endpoint device before you build the model.</p>
+        </div>
+      </div>
+
+      <div class="dd-item">
+        <button class="dd-q" aria-expanded="false">
+          How do you communicate technical findings to clinical teams?
+          <i class="fas fa-plus dd-ico"></i>
+        </button>
+        <div class="dd-a">
+          <p>I translate in both directions and that is genuinely rare.</p>
+          <p>With clinical teams, I avoid metrics that require statistical training to interpret. I don't say "the model achieved an AUC of 0.87." I say "for every 10 high-risk patients the model flags, 7 or 8 actually need intervention  and it catches 9 out of 10 patients who would otherwise be missed."</p>
+          <p>With technical teams, I bring the clinical context that keeps models grounded. I've presented dashboards to a Head of Department and shipped pipelines to production. The ability to operate in both rooms is something I've built deliberately  because healthcare AI that clinicians don't trust doesn't get used, and unused AI helps nobody.</p>
+        </div>
+      </div>
+
+      <div class="dd-item">
+        <button class="dd-q" aria-expanded="false">
+          Why are you a strong addition to a healthcare AI team right now, even before finishing medical school?
+          <i class="fas fa-plus dd-ico"></i>
+        </button>
+        <div class="dd-a">
+          <p>Because the combination I bring doesn't get stronger by waiting.</p>
+          <p>I am currently embedded in clinical training, seeing patients, reading investigations, working in departments. That clinical immersion is live, not recalled. At the same time, I am shipping production AI systems: fullstack agentic applications, RAG pipelines, explainable ML models.</p>
+          <p>Most medical students aren't building these things. Most ML engineers aren't embedded in clinical rotations. The intersection is where I work, and that perspective is not something you add after graduation. It is something you build by doing both at the same time, which is exactly what I am doing now.</p>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<!-- CONTACT FORM SECTION -->
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Send me a message</h2>
-        
-        <!--💡UPDATE: Go to formsubmit.co and replace the email with your own-->
-        <form action="https://formsubmit.co/mikailibrahimaremu@gmail.com" method="POST" class="contact-form">
-            <p> Interested in collaborating, hiring my services or have questions about my work? I'd love to hear from you!</p>
-
-            <!-- Form Fields -->
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" placeholder="your contact" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
-            </div>
-            
-            <!-- Submit Button -->
-            <button type="submit" class="btn">Send Message</button>
-
-        </form>
+<!-- WHAT I BUILD -->
+<section id="builds" class="section reveal">
+  <div class="container">
+    <div class="sec-label">03 — Services</div>
+    <h2 class="sec-heading">What I Build</h2>
+    <p class="sec-sub">From clinical data challenges to production-grade AI systems.</p>
+    <div class="builds-layout">
+      <div class="builds-challenges">
+        <div class="builds-col-label">CLINICAL CHALLENGES</div>
+        <ul class="challenge-list">
+          <li><i class="fas fa-times-circle"></i>Fragmented, unstructured clinical data</li>
+          <li><i class="fas fa-times-circle"></i>Black-box AI decisions clinicians can't trust</li>
+          <li><i class="fas fa-times-circle"></i>Biased models that harm underserved patients</li>
+          <li><i class="fas fa-times-circle"></i>No pathway from screening to care access</li>
+          <li><i class="fas fa-times-circle"></i>Manual, error-prone clinical workflows</li>
+          <li><i class="fas fa-times-circle"></i>Models that work in labs but fail in the field</li>
+          <li><i class="fas fa-times-circle"></i>Static dashboards with no predictive insight</li>
+          <li><i class="fas fa-times-circle"></i>AI built for wealthy systems, not SSA realities</li>
+        </ul>
+      </div>
+      <div class="builds-arrow">
+        <div class="arrow-line"></div>
+        <div class="arrow-label">Ibrahim's Stack</div>
+        <div class="arrow-stack">
+          <span>LangGraph</span><span>RAG</span><span>FastAPI</span>
+          <span>SHAP/LIME</span><span>Docker</span><span>XGBoost</span>
+        </div>
+      </div>
+      <div class="builds-solutions">
+        <div class="builds-col-label">AI SOLUTIONS</div>
+        <ul class="solution-list">
+          <li><i class="fas fa-check-circle"></i>Unified RAG pipelines with clinical knowledge bases</li>
+          <li><i class="fas fa-check-circle"></i>Explainable AI with SHAP, LIME & counterfactuals</li>
+          <li><i class="fas fa-check-circle"></i>Fairness-audited models across demographic subgroups</li>
+          <li><i class="fas fa-check-circle"></i>Multi-agent triage, routing & referral pipelines</li>
+          <li><i class="fas fa-check-circle"></i>Agentic clinical workflows with LangChain/LangGraph</li>
+          <li><i class="fas fa-check-circle"></i>Containerized inference with CI/CD & drift monitoring</li>
+          <li><i class="fas fa-check-circle"></i>Power BI & Streamlit dashboards with predictive KPIs</li>
+          <li><i class="fas fa-check-circle"></i>Low-resource optimized pipelines for SSA deployment</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <div class="container">
+    <div class="sec-label">04 — Projects</div>
+    <h2 class="sec-heading">Selected Work</h2>
+    <div class="projects-grid">
+
+      <div class="project-card featured reveal-card">
+        <div class="proj-img-wrap">
+          <img src="assets/images/auxichron.png" alt="AuxiChron"/>
+          <span class="proj-badge flagship">Flagship</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-num">01</span><span class="proj-type">Agentic AI · Full-stack · RAG</span></div>
+          <h3>AuxiChron — Your Digital Health Twin</h3>
+          <p>An agentic clinical OS for chronic care. AI-powered triage, longitudinal patient monitoring, and a provider command center. Built fullstack with a RAG pipeline grounded in the Nigerian Standard Treatment Guidelines.</p>
+          <div class="proj-tags"><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FastAPI</span><span>Docker</span><span>React</span></div>
+          <div class="proj-links">
+            <a href="auxichron-documentation.html" target="_blank" class="pl-primary">Documentation</a>
+            <a href="https://auxichronhealth.lovable.app" target="_blank" class="pl-secondary">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="proj-img-wrap">
+          <img src="assets/images/cancer.png" alt="OncoSight-SSA"/>
+          <span class="proj-badge inprog">In Progress</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-num">02</span><span class="proj-type">Multi-Agent XAI · Oncology</span></div>
+          <h3>OncoSight-SSA</h3>
+          <p>First integrated pipeline combining cancer risk screening, facility mapping, referral planning, and patient compliance prediction for Sub-Saharan Africa  with SHAP, LIME, and counterfactual explainability at every agent.</p>
+          <div class="proj-tags"><span>LangGraph</span><span>XGBoost</span><span>SHAP</span><span>LIME</span><span>Kenya DHS</span></div>
+          <div class="proj-links">
+            <a href="oncosight-ssa-documentation.html" target="_blank" class="pl-primary">Documentation</a>
+            <a href="oncosight-ssa-documentation.html" target="_blank" class="pl-secondary">View Roadmap <i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="proj-img-wrap">
+          <img src="assets/images/bct-llm-agent.png" alt="BCT LLM Agent"/>
+          <span class="proj-badge hack">Hackathon</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-num">03</span><span class="proj-type">RAG · Recommendation · NLP</span></div>
+          <h3>BCT LLM Agent</h3>
+          <p>Agentic recommendation system with a Nigerian contextualization layer. Culturally authentic user modeling, personalized recommendations with multi-turn memory and cold-start handling.</p>
+          <div class="proj-tags"><span>LlamaIndex</span><span>ChromaDB</span><span>Groq</span><span>FastAPI</span><span>Docker</span></div>
+          <div class="proj-links">
+            <a href="BCT_LLM_Agent_Solution_Paper.pdf" target="_blank" class="pl-primary">Solution Paper</a>
+            <a href="https://huggingface.co/spaces/DrKryptoMed/bct-llm-agent" target="_blank" class="pl-secondary">Test Model <i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="proj-img-wrap">
+          <img src="assets/images/project1.jpg" alt="Readmission Analysis"/>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-num">04</span><span class="proj-type">Analytics · BI · Health Equity</span></div>
+          <h3>Hospital Readmission &amp; Root Cause Analysis</h3>
+          <p>Power BI dashboards analyzing readmission drivers across hospital, community, and daycare services. 20 KPIs, equity analysis, 10% validated readmission rate vs 13.9% sector benchmark.</p>
+          <div class="proj-tags"><span>Power BI</span><span>DAX</span><span>SQL</span></div>
+          <div class="proj-links">
+            <a href="readmissiondocumentation.html" target="_blank" class="pl-primary">Documentation</a>
+            <a href="https://drive.google.com/file/d/1YF82EGCOMrObwPJF_j8oB3DR44bay79A/view?usp=sharing" target="_blank" class="pl-secondary">View Dashboard <i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="proj-img-wrap">
+          <img src="assets/images/life_expectancy_analysis.png" alt="Life Expectancy"/>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-num">05</span><span class="proj-type">Machine Learning · Streamlit</span></div>
+          <h3>Life Expectancy Analysis</h3>
+          <p>Predicting global longevity from socio-economic and public health drivers. Multi-model ML comparison with feature importance analysis, deployed as an interactive Streamlit application.</p>
+          <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/DrKryptoMed/life_expectancy_analysis" target="_blank" class="pl-primary">GitHub</a>
+            <a href="https://lifeexpectancyanalysis.streamlit.app" target="_blank" class="pl-secondary">Live App <i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+  <div class="container">
+    <div class="sec-label">05 — Capabilities</div>
+    <h2 class="sec-heading">Technical Skillset</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal-card">
+        <div class="sk-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI &amp; Agentic Systems</h3>
+        <div class="sk-tags">
+          <span>Python (ML/AI)</span><span>LangChain / LangGraph</span><span>Predictive Modeling</span>
+          <span>RAG Pipelines</span><span>Agentic Systems</span><span>NLP in Healthcare</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-card">
+        <div class="sk-icon"><i class="fas fa-microscope"></i></div>
+        <h3>Research &amp; Epidemiology</h3>
+        <div class="sk-tags">
+          <span>Precision Oncology</span><span>Genomics</span><span>Study Design (RCT/Cohort)</span>
+          <span>ICD-10 Coding</span><span>Systematic Reviews</span><span>Meta-Analysis</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-card">
+        <div class="sk-icon"><i class="fas fa-calculator"></i></div>
+        <h3>Biostatistics &amp; Data</h3>
+        <div class="sk-tags">
+          <span>Advanced SQL</span><span>SPSS / Stata / SAS</span><span>Generalized Linear Models</span>
+          <span>Multilevel Modeling</span><span>Risk Adjustment (HCC)</span><span>AWS Cloud</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-card">
+        <div class="sk-icon"><i class="fas fa-rocket"></i></div>
+        <h3>Deployment &amp; Viz</h3>
+        <div class="sk-tags">
+          <span>FastAPI</span><span>Docker</span><span>HuggingFace</span><span>Streamlit</span>
+          <span>React / Full-stack</span><span>Power BI</span><span>Git / GitHub</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <div class="container">
+    <div class="sec-label">06 — Contact</div>
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <h2>Let's build<br/><em>something<br/>that matters.</em></h2>
+        <p>Interested in collaborating, hiring my services, or have questions about my work? I'd love to hear from you.</p>
+        <div class="contact-info">
+          <a href="mailto:Mikailibrahimaremu@gmail.com"><i class="fas fa-envelope"></i>Mikailibrahimaremu@gmail.com</a>
+          <a href="https://www.linkedin.com/in/ibrahim-mikail-b88477194/" target="_blank"><i class="fab fa-linkedin-in"></i>linkedin.com/in/ibrahim-mikail</a>
+          <a href="https://github.com/DrKryptoMed" target="_blank"><i class="fab fa-github"></i>github.com/DrKryptoMed</a>
+        </div>
+      </div>
+      <form action="https://formsubmit.co/mikailibrahimaremu@gmail.com" method="POST" class="contact-form">
+        <div class="form-row">
+          <div class="fg"><label>Name</label><input type="text" name="name" placeholder="Your name" required/></div>
+          <div class="fg"><label>Email</label><input type="email" name="email" placeholder="Your email" required/></div>
+        </div>
+        <div class="fg"><label>Subject</label><input type="text" name="subject" placeholder="What's this about?" required/></div>
+        <div class="fg"><label>Message</label><textarea name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea></div>
+        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <div class="container">
-        <!--💡UPDATE: Change the year and your name-->
-        <p>&copy; 2025 DrKryptoMed. All rights reserved.</p>
+  <div class="container footer-inner">
+    <span class="footer-name">Ibrahim Aremu Mikail</span>
+    <span class="footer-copy">© 2025 DrKryptoMed. All rights reserved.</span>
+    <div class="footer-soc">
+      <a href="https://www.linkedin.com/in/ibrahim-mikail-b88477194/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/DrKryptoMed" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.kaggle.com/mikailibrahimaremu" target="_blank"><i class="fab fa-kaggle"></i></a>
     </div>
+  </div>
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script>
+// Nav
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
 
+// Typewriter
+const words = ['Medical Student (MBBS)', 'Public Health Specialist', 'Clinical AI Developer', 'Health Equity Advocate'];
+let wi = 0, ci = 0, del = false;
+const el = document.getElementById('role-type');
+function type() {
+  const w = words[wi];
+  el.textContent = del ? w.slice(0, --ci) : w.slice(0, ++ci);
+  if (!del && ci === w.length) { del = true; setTimeout(type, 2000); return; }
+  if (del && ci === 0) { del = false; wi = (wi + 1) % words.length; }
+  setTimeout(type, del ? 40 : 75);
+}
+type();
+
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal, .reveal-card').forEach(el => obs.observe(el));
+
+// Active nav
+const secs = document.querySelectorAll('section[id]');
+const nls = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  secs.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+  nls.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+});
+
+// Deep Dive accordion
+document.querySelectorAll('.dd-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const ans = btn.nextElementSibling;
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.dd-q').forEach(b => { b.setAttribute('aria-expanded','false'); b.nextElementSibling.classList.remove('open'); });
+    if (!open) { btn.setAttribute('aria-expanded','true'); ans.classList.add('open'); }
+  });
+});
+</script>
 </body>
 </html>
