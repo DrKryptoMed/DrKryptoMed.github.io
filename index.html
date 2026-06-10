@@ -11,6 +11,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
+  <style>
+    /* Roadmap section — scoped additions */
+    .roadmap-track{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:1rem;margin-top:2.5rem}
+    .rm-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.3rem;transition:border-color .2s,transform .2s}
+    .rm-item:hover{border-color:var(--border-lt);transform:translateY(-3px)}
+    .rm-item.shipped{border-color:var(--accent-d)}
+    .rm-item.capstone{border-color:#7A4FA3}
+    .rm-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.7rem}
+    .rm-num{font-family:var(--mono);font-size:1.35rem;font-weight:500;color:var(--muted)}
+    .rm-status{font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .55rem;border-radius:3px;font-weight:500}
+    .s-ship{background:var(--accent-gl);color:var(--accent)}
+    .s-next{background:var(--coral-gl);color:var(--coral)}
+    .s-plan{background:rgba(94,123,168,.12);color:var(--muted)}
+    .s-cap{background:rgba(122,79,163,.15);color:#B98FD8}
+    .rm-item h3{font-family:var(--display);font-size:1.02rem;font-weight:700;color:var(--text);margin-bottom:.25rem}
+    .rm-kind{font-size:.78rem;color:var(--muted);margin-bottom:.9rem;line-height:1.45}
+    .rm-tags{display:flex;flex-wrap:wrap;gap:.35rem}
+    .rm-tags span{font-family:var(--mono);font-size:.6rem;color:var(--muted);background:var(--surface);border:1px solid var(--border);padding:.2rem .5rem;border-radius:3px}
+    .rm-note{margin-top:1.8rem;font-size:.86rem;color:var(--muted);border-left:2px solid var(--accent-d);padding-left:1rem;max-width:60ch}
+  </style>
 </head>
 <body>
 
@@ -23,6 +43,7 @@
       <li><a href="#deepdive">Deep Dive</a></li>
       <li><a href="#builds">What I Build</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -67,15 +88,15 @@
 <!-- STATS BAR -->
 <div class="stats-bar reveal">
   <div class="stats-inner">
-    <div class="sitem"><span class="sval">MBBS Student</span><span class="slbl">BSc. Anatomy</span></div>
-    <div class="sdiv"></div>
     <div class="sitem"><span class="sval">MSc</span><span class="slbl">Public Health</span></div>
     <div class="sdiv"></div>
-    <div class="sitem"><span class="sval">5+</span><span class="slbl">AI Projects Shipped</span></div>
+    <div class="sitem"><span class="sval">Clinical</span><span class="slbl">Medical Training</span></div>
     <div class="sdiv"></div>
-    <div class="sitem"><span class="sval">2</span><span class="slbl">Years in Practice</span></div>
+    <div class="sitem"><span class="sval">6+</span><span class="slbl">Projects Shipped</span></div>
     <div class="sdiv"></div>
-    <div class="sitem"><span class="sval">4</span><span class="slbl">AI Agents Built</span></div>
+    <div class="sitem"><span class="sval">Full-Stack</span><span class="slbl">Model → API → UI</span></div>
+    <div class="sdiv"></div>
+    <div class="sitem"><span class="sval">Agentic</span><span class="slbl">Multi-Agent Systems</span></div>
   </div>
 </div>
 
@@ -97,10 +118,10 @@
       </div>
       <div class="about-right">
         <h2>I don't just analyze healthcare data —<br/><em>I build the systems that act on it.</em></h2>
-        <p>I'm Ibrahim Mikail, a medical student and Public Health Specialist with full professional practice in Healthcare Data Science, AI/ML, and MLOps. That combination is rare, and I use it deliberately  to build healthcare AI that is both technically rigorous and clinically grounded.</p>
+        <p>I'm Ibrahim Mikail, a clinically trained Public Health Specialist working across Healthcare Data Science, AI/ML, and MLOps. That combination is rare, and I use it deliberately to build healthcare AI that is both technically rigorous and clinically grounded.</p>
         <p>My work has evolved from classical Health analysis and predictive modeling into designing and deploying end-to-end agentic AI systems: LLM-powered clinical tools, RAG pipelines for medical knowledge retrieval, ML inference pipelines with MLOps infrastructure, and clinical decision support applications built fullstack from model to UI.</p>
         <p>What sets my perspective apart is that I understand the data <em>and</em> the disease. I can read an ICD-10 code, interpret a pathology report, and architect the pipeline that processes it at scale. I think about model fairness not as a checkbox, but as a clinical imperative, because I've seen what biased tools cost patients.</p>
-        <p class="about-close">My focus: vascular disease AI, Chronic disease modeling, health equity in algorithmic systems, and agentic workflows for clinical settings. <strong>I'm not waiting to finish medical school to do meaningful work. I'm doing it now.</strong></p>
+        <p class="about-close">My focus: clinical decision support, chronic and oncologic disease modeling, health equity in algorithmic systems, and agentic workflows for clinical settings — with a trajectory toward computational precision medicine. <strong>I build healthcare AI end to end: from model to deployed product.</strong></p>
       </div>
     </div>
   </div>
@@ -188,13 +209,13 @@
 
       <div class="dd-item">
         <button class="dd-q" aria-expanded="false">
-          Why are you a strong addition to a healthcare AI team right now, even before finishing medical school?
+          What makes your clinical background an advantage on a healthcare AI team?
           <i class="fas fa-plus dd-ico"></i>
         </button>
         <div class="dd-a">
-          <p>Because the combination I bring doesn't get stronger by waiting.</p>
-          <p>I am currently embedded in clinical training, seeing patients, reading investigations, working in departments. That clinical immersion is live, not recalled. At the same time, I am shipping production AI systems: fullstack agentic applications, RAG pipelines, explainable ML models.</p>
-          <p>Most medical students aren't building these things. Most ML engineers aren't embedded in clinical rotations. The intersection is where I work, and that perspective is not something you add after graduation. It is something you build by doing both at the same time, which is exactly what I am doing now.</p>
+          <p>Because the hard part of healthcare AI isn't the model — it's knowing what the data means and where it fails.</p>
+          <p>My training in medicine and public health means I read source data the way a clinician does: what an ICD-10 code represents in practice, what a pathology report says beyond its label, where EMR data is systematically unreliable. I pair that with shipping production systems — full-stack agentic applications, RAG pipelines, explainable ML models deployed end to end.</p>
+          <p>Most ML engineers don't have the clinical grounding; most clinically trained people don't ship production AI. Working at that intersection is the whole point, and it's what keeps my systems both technically sound and clinically trustworthy.</p>
         </div>
       </div>
 
@@ -256,11 +277,28 @@
 
       <div class="project-card featured reveal-card">
         <div class="proj-img-wrap">
-          <img src="assets/images/auxichron.png" alt="AuxiChron"/>
-          <span class="proj-badge flagship">Flagship</span>
+          <img src="assets/images/project1.jpg" alt="ReadmitIQ"/>
+          <span class="proj-badge flagship">Flagship · Live</span>
         </div>
         <div class="proj-body">
-          <div class="proj-meta"><span class="proj-num">01</span><span class="proj-type">Agentic AI · Full-stack · RAG</span></div>
+          <div class="proj-meta"><span class="proj-num">01</span><span class="proj-type">Clinical ML · Full-stack · MLOps</span></div>
+          <h3>ReadmitIQ — 30-Day Readmission Risk</h3>
+          <p>Production clinical decision-support system predicting readmission risk at discharge. XGBoost (AUC 0.891, 77% recall), SHAP explanations on every prediction, IBM AIF360 fairness audit, FastAPI backend and Next.js dashboard — deployed live with remote MLflow tracking.</p>
+          <div class="proj-tags"><span>XGBoost</span><span>FastAPI</span><span>SHAP</span><span>AIF360</span><span>Docker</span><span>MLflow</span><span>Next.js</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/DrKryptoMed/readmitiq" target="_blank" class="pl-primary">GitHub</a>
+            <a href="https://readmitiq.vercel.app" target="_blank" class="pl-secondary">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card">
+        <div class="proj-img-wrap">
+          <img src="assets/images/auxichron.png" alt="AuxiChron"/>
+          <span class="proj-badge flagship">Live</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta"><span class="proj-num">02</span><span class="proj-type">Agentic AI · Full-stack · RAG</span></div>
           <h3>AuxiChron — Your Digital Health Twin</h3>
           <p>An agentic clinical OS for chronic care. AI-powered triage, longitudinal patient monitoring, and a provider command center. Built fullstack with a RAG pipeline grounded in the Nigerian Standard Treatment Guidelines.</p>
           <div class="proj-tags"><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FastAPI</span><span>Docker</span><span>React</span></div>
@@ -277,7 +315,7 @@
           <span class="proj-badge inprog">In Progress</span>
         </div>
         <div class="proj-body">
-          <div class="proj-meta"><span class="proj-num">02</span><span class="proj-type">Multi-Agent XAI · Oncology</span></div>
+          <div class="proj-meta"><span class="proj-num">03</span><span class="proj-type">Multi-Agent XAI · Oncology</span></div>
           <h3>OncoSight-SSA</h3>
           <p>First integrated pipeline combining cancer risk screening, facility mapping, referral planning, and patient compliance prediction for Sub-Saharan Africa  with SHAP, LIME, and counterfactual explainability at every agent.</p>
           <div class="proj-tags"><span>LangGraph</span><span>XGBoost</span><span>SHAP</span><span>LIME</span><span>Kenya DHS</span></div>
@@ -294,7 +332,7 @@
           <span class="proj-badge hack">Hackathon</span>
         </div>
         <div class="proj-body">
-          <div class="proj-meta"><span class="proj-num">03</span><span class="proj-type">RAG · Recommendation · NLP</span></div>
+          <div class="proj-meta"><span class="proj-num">04</span><span class="proj-type">RAG · Recommendation · NLP</span></div>
           <h3>BCT LLM Agent</h3>
           <p>Agentic recommendation system with a Nigerian contextualization layer. Culturally authentic user modeling, personalized recommendations with multi-turn memory and cold-start handling.</p>
           <div class="proj-tags"><span>LlamaIndex</span><span>ChromaDB</span><span>Groq</span><span>FastAPI</span><span>Docker</span></div>
@@ -305,39 +343,69 @@
         </div>
       </div>
 
-      <div class="project-card reveal-card">
-        <div class="proj-img-wrap">
-          <img src="assets/images/project1.jpg" alt="Readmission Analysis"/>
-        </div>
-        <div class="proj-body">
-          <div class="proj-meta"><span class="proj-num">04</span><span class="proj-type">Analytics · BI · Health Equity</span></div>
-          <h3>Hospital Readmission &amp; Root Cause Analysis</h3>
-          <p>Power BI dashboards analyzing readmission drivers across hospital, community, and daycare services. 20 KPIs, equity analysis, 10% validated readmission rate vs 13.9% sector benchmark.</p>
-          <div class="proj-tags"><span>Power BI</span><span>DAX</span><span>SQL</span></div>
-          <div class="proj-links">
-            <a href="readmissiondocumentation.html" target="_blank" class="pl-primary">Documentation</a>
-            <a href="https://drive.google.com/file/d/1YF82EGCOMrObwPJF_j8oB3DR44bay79A/view?usp=sharing" target="_blank" class="pl-secondary">View Dashboard <i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap" class="section reveal">
+  <div class="container">
+    <div class="sec-label">Roadmap</div>
+    <h2 class="sec-heading">The Build Sequence</h2>
+    <p class="sec-sub">Seven systems spanning clinical AI, population health, and precision oncology — each adding new capability, each kept deliberately clinical.</p>
+    <div class="roadmap-track">
+
+      <div class="rm-item shipped">
+        <div class="rm-top"><span class="rm-num">01</span><span class="rm-status s-ship">Shipped</span></div>
+        <h3>ReadmitIQ</h3>
+        <p class="rm-kind">30-day readmission risk · full-stack deploy</p>
+        <div class="rm-tags"><span>XGBoost</span><span>FastAPI</span><span>SHAP</span><span>MLflow</span></div>
       </div>
 
-      <div class="project-card reveal-card">
-        <div class="proj-img-wrap">
-          <img src="assets/images/life_expectancy_analysis.png" alt="Life Expectancy"/>
-        </div>
-        <div class="proj-body">
-          <div class="proj-meta"><span class="proj-num">05</span><span class="proj-type">Machine Learning · Streamlit</span></div>
-          <h3>Life Expectancy Analysis</h3>
-          <p>Predicting global longevity from socio-economic and public health drivers. Multi-model ML comparison with feature importance analysis, deployed as an interactive Streamlit application.</p>
-          <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span></div>
-          <div class="proj-links">
-            <a href="https://github.com/DrKryptoMed/life_expectancy_analysis" target="_blank" class="pl-primary">GitHub</a>
-            <a href="https://lifeexpectancyanalysis.streamlit.app" target="_blank" class="pl-secondary">Live App <i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
+      <div class="rm-item">
+        <div class="rm-top"><span class="rm-num">02</span><span class="rm-status s-next">Building</span></div>
+        <h3>Sentinel</h3>
+        <p class="rm-kind">Deterioration early-warning from streaming vitals</p>
+        <div class="rm-tags"><span>PyTorch</span><span>Time-series</span><span>PostgreSQL</span><span>CI/CD</span></div>
+      </div>
+
+      <div class="rm-item">
+        <div class="rm-top"><span class="rm-num">03</span><span class="rm-status s-plan">Planned</span></div>
+        <h3>Cohort</h3>
+        <p class="rm-kind">Real-world evidence · causal inference at population scale</p>
+        <div class="rm-tags"><span>DoWhy</span><span>EconML</span><span>RWE</span><span>Polars</span></div>
+      </div>
+
+      <div class="rm-item">
+        <div class="rm-top"><span class="rm-num">04</span><span class="rm-status s-plan">Planned</span></div>
+        <h3>Scribe</h3>
+        <p class="rm-kind">Clinical notes &amp; pathology reports → structured data</p>
+        <div class="rm-tags"><span>LLM APIs</span><span>Structured output</span><span>Eval</span></div>
+      </div>
+
+      <div class="rm-item">
+        <div class="rm-top"><span class="rm-num">05</span><span class="rm-status s-plan">Planned</span></div>
+        <h3>Compass</h3>
+        <p class="rm-kind">Clinical RAG assistant with grounded citations</p>
+        <div class="rm-tags"><span>RAG</span><span>pgvector</span><span>LLM-as-judge</span><span>Guardrails</span></div>
+      </div>
+
+      <div class="rm-item">
+        <div class="rm-top"><span class="rm-num">06</span><span class="rm-status s-plan">Planned</span></div>
+        <h3>Tumor Board</h3>
+        <p class="rm-kind">Tool-using clinical agent on cloud</p>
+        <div class="rm-tags"><span>Agents</span><span>MCP</span><span>FHIR</span><span>AWS/GCP</span></div>
+      </div>
+
+      <div class="rm-item capstone">
+        <div class="rm-top"><span class="rm-num">07</span><span class="rm-status s-cap">Capstone</span></div>
+        <h3>Atlas</h3>
+        <p class="rm-kind">Precision-oncology outcomes · clinical + genomic features</p>
+        <div class="rm-tags"><span>Survival analysis</span><span>MLOps</span><span>K8s</span><span>Drift</span></div>
       </div>
 
     </div>
+    <p class="rm-note">The sequence drifts deliberately from general clinical decision support toward precision oncology — every build adds a distinct technical capability while staying in the clinical domain.</p>
   </div>
 </section>
 
@@ -370,8 +438,8 @@
         <div class="sk-icon"><i class="fas fa-calculator"></i></div>
         <h3>Epidemiology &amp; Biostatistics</h3>
         <div class="sk-tags">
-          <span>Advanced SQL</span><span>Study Design (RCT/Cohort)</span><span>Multilevel Modeling</span>
-          <span>Generalized Linear Models</span><span>Risk Adjustment (HCC)</span><span>Systematic Reviews</span>
+          <span>Advanced SQL</span><span>Causal Inference</span><span>Real-World Evidence</span>
+          <span>Survival Analysis</span><span>Study Design (RCT/Cohort)</span><span>Multilevel Modeling</span>
         </div>
       </div>
 
@@ -418,7 +486,7 @@
 <footer>
   <div class="container footer-inner">
     <span class="footer-name">Ibrahim Aremu Mikail</span>
-    <span class="footer-copy">© 2025 DrKryptoMed. All rights reserved.</span>
+    <span class="footer-copy">© 2026 DrKryptoMed. All rights reserved.</span>
     <div class="footer-soc">
       <a href="https://www.linkedin.com/in/ibrahim-mikail-b88477194/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://github.com/DrKryptoMed" target="_blank"><i class="fab fa-github"></i></a>
@@ -434,7 +502,7 @@ const nav = document.getElementById('main-nav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
 
 // Typewriter
-const words = ['Medical Student (MBBS)', 'Public Health Specialist', 'Clinical AI Developer', 'Health Equity Advocate'];
+const words = ['Clinical AI Engineer', 'Public Health Data Scientist', 'Agentic AI Developer', 'MLOps for Healthcare'];
 let wi = 0, ci = 0, del = false;
 const el = document.getElementById('role-type');
 function type() {
