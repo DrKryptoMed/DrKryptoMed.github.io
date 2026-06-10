@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Syne','DM Sans',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1326"/>
+      <stop offset="1" stop-color="#070D1A"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#00C8BE" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#00C8BE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF5F3F" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FF5F3F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF7A4F"/>
+      <stop offset="1" stop-color="#FF5F3F"/>
+    </linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#1A2E50" stroke-width="1" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <circle cx="150" cy="120" r="360" fill="url(#glow1)"/>
+  <circle cx="1080" cy="600" r="320" fill="url(#glow2)"/>
+
+  <!-- card frame -->
+  <rect x="48" y="48" width="1104" height="579" rx="22" fill="#0C1528" stroke="#1A2E50" stroke-width="1.5"/>
+
+  <!-- eyebrow -->
+  <g transform="translate(88,104)">
+    <circle cx="6" cy="-4" r="6" fill="#00C8BE"/>
+    <text x="22" y="0" fill="#00C8BE" font-size="17" letter-spacing="4" font-family="'JetBrains Mono',monospace">CLINICAL DECISION SUPPORT</text>
+  </g>
+
+  <!-- title -->
+  <text x="86" y="186" fill="#E0EAF8" font-size="74" font-weight="800" letter-spacing="-1">ReadmitIQ</text>
+  <text x="90" y="226" fill="#5E7BA8" font-size="25" font-weight="400" font-family="'DM Sans',sans-serif">30-Day Hospital Readmission Risk</text>
+
+  <!-- ECG line -->
+  <path d="M88,270 L300,270 L318,270 L330,244 L342,300 L354,270 L520,270"
+        fill="none" stroke="#00877F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+
+  <!-- factor bars -->
+  <g transform="translate(88,330)" font-family="'DM Sans',sans-serif">
+    <text x="0" y="0" fill="#8FA6C9" font-size="16" letter-spacing="1" font-family="'JetBrains Mono',monospace">TOP RISK FACTORS</text>
+
+    <g transform="translate(0,30)">
+      <text x="0" y="13" fill="#C7D6EE" font-size="16">Active medications</text>
+      <rect x="250" y="2" width="300" height="13" rx="6" fill="#13233F"/>
+      <rect x="250" y="2" width="232" height="13" rx="6" fill="#FF5F3F"/>
+    </g>
+    <g transform="translate(0,64)">
+      <text x="0" y="13" fill="#C7D6EE" font-size="16">Days since last admission</text>
+      <rect x="250" y="2" width="300" height="13" rx="6" fill="#13233F"/>
+      <rect x="250" y="2" width="198" height="13" rx="6" fill="#FF5F3F"/>
+    </g>
+    <g transform="translate(0,98)">
+      <text x="0" y="13" fill="#C7D6EE" font-size="16">Charlson comorbidity index</text>
+      <rect x="250" y="2" width="300" height="13" rx="6" fill="#13233F"/>
+      <rect x="250" y="2" width="150" height="13" rx="6" fill="#FF7A4F"/>
+    </g>
+    <g transform="translate(0,132)">
+      <text x="0" y="13" fill="#C7D6EE" font-size="16">Anticoagulant therapy</text>
+      <rect x="250" y="2" width="300" height="13" rx="6" fill="#13233F"/>
+      <rect x="370" y="2" width="180" height="13" rx="6" fill="#00C8BE"/>
+    </g>
+  </g>
+
+  <!-- model badge -->
+  <g transform="translate(88,548)">
+    <rect x="0" y="0" width="300" height="40" rx="8" fill="#0A1730" stroke="#22395F" stroke-width="1"/>
+    <circle cx="22" cy="20" r="5" fill="#00C8BE"/>
+    <text x="40" y="26" fill="#8FA6C9" font-size="15" font-family="'JetBrains Mono',monospace">xgboost_v1 · AUC 0.891</text>
+  </g>
+  <text x="408" y="574" fill="#3E567B" font-size="14" font-family="'JetBrains Mono',monospace">SHAP-explained · fairness-audited</text>
+
+  <!-- risk gauge -->
+  <g transform="translate(930,300)">
+    <circle cx="0" cy="0" r="135" fill="none" stroke="#13233F" stroke-width="26"/>
+    <!-- 74% arc: circumference 2*pi*135=848.2; 74% = 627.7 -->
+    <circle cx="0" cy="0" r="135" fill="none" stroke="url(#ring)" stroke-width="26" stroke-linecap="round"
+            stroke-dasharray="627.7 848.2" transform="rotate(-90)"/>
+    <text x="0" y="-2" fill="#FF7A4F" font-size="72" font-weight="800" text-anchor="middle">74%</text>
+    <text x="0" y="36" fill="#5E7BA8" font-size="16" letter-spacing="3" text-anchor="middle" font-family="'JetBrains Mono',monospace">30-DAY RISK</text>
+  </g>
+  <g transform="translate(930,470)">
+    <rect x="-72" y="-20" width="144" height="40" rx="20" fill="rgba(255,95,63,0.12)" stroke="#FF5F3F" stroke-width="1.2"/>
+    <circle cx="-44" cy="0" r="5" fill="#FF5F3F"/>
+    <text x="-28" y="6" fill="#FF8A6F" font-size="17" font-weight="600" letter-spacing="1">HIGH RISK</text>
+  </g>
+</svg>
