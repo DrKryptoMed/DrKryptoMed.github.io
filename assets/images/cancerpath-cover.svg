@@ -1,0 +1,75 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CancerPath-Africa — multi-agent cervical cancer screening pipeline">
+  <defs>
+    <linearGradient id="cBg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0C1528"/>
+      <stop offset="1" stop-color="#070D1A"/>
+    </linearGradient>
+    <linearGradient id="cFlow" x1="80" y1="0" x2="720" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00C8BE"/>
+      <stop offset="1" stop-color="#FF5F3F"/>
+    </linearGradient>
+    <radialGradient id="cGlow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#00C8BE" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#00C8BE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="cGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1A2E50" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#cBg)"/>
+  <rect width="800" height="450" fill="url(#cGrid)" opacity="0.45"/>
+  <rect width="800" height="450" fill="url(#cGlow)"/>
+
+  <!-- connecting flow line through the four agents -->
+  <line x1="150" y1="235" x2="650" y2="235" stroke="url(#cFlow)" stroke-width="2.5" opacity="0.85"/>
+  <!-- flow arrowheads -->
+  <g fill="#5E7BA8">
+    <path d="M292 235 l-9 -5 v10 z"/>
+    <path d="M452 235 l-9 -5 v10 z"/>
+    <path d="M612 235 l-9 -5 v10 z"/>
+  </g>
+
+  <!-- Agent nodes -->
+  <g font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">
+    <!-- Agent 1: screening -->
+    <circle cx="150" cy="235" r="34" fill="#101E35" stroke="#00C8BE" stroke-width="2.5"/>
+    <text x="150" y="231" font-size="20" fill="#00C8BE" font-family="'Syne', sans-serif" font-weight="700">1</text>
+    <text x="150" y="295" fill="#5E7BA8">Screen</text>
+
+    <!-- Agent 2: map -->
+    <circle cx="350" cy="235" r="34" fill="#101E35" stroke="#22395F" stroke-width="2.5"/>
+    <text x="350" y="231" font-size="20" fill="#E0EAF8" font-family="'Syne', sans-serif" font-weight="700">2</text>
+    <text x="350" y="295" fill="#5E7BA8">Map</text>
+
+    <!-- Agent 3: LLM referral -->
+    <circle cx="510" cy="235" r="34" fill="#101E35" stroke="#22395F" stroke-width="2.5"/>
+    <text x="510" y="231" font-size="20" fill="#E0EAF8" font-family="'Syne', sans-serif" font-weight="700">3</text>
+    <text x="510" y="295" fill="#5E7BA8">Refer</text>
+
+    <!-- Agent 4: compliance -->
+    <circle cx="650" cy="235" r="34" fill="#101E35" stroke="#FF5F3F" stroke-width="2.5"/>
+    <text x="650" y="231" font-size="20" fill="#FF5F3F" font-family="'Syne', sans-serif" font-weight="700">4</text>
+    <text x="650" y="295" fill="#5E7BA8">Comply</text>
+  </g>
+
+  <!-- small agent labels above -->
+  <g font-family="'DM Sans', sans-serif" font-size="11" fill="#5E7BA8" text-anchor="middle" opacity="0.8">
+    <text x="150" y="180">non-uptake</text>
+    <text x="350" y="180">geospatial</text>
+    <text x="510" y="180">LLaMA 3.3</text>
+    <text x="650" y="180">barriers</text>
+  </g>
+
+  <!-- title block -->
+  <text x="80" y="62" font-family="'Syne', sans-serif" font-size="36" font-weight="800" fill="#E0EAF8" letter-spacing="-1">CancerPath<tspan fill="#00C8BE">·</tspan>Africa</text>
+  <text x="82" y="392" font-family="'JetBrains Mono', monospace" font-size="14" fill="#00C8BE" letter-spacing="1">EXPLAINABLE MULTI-AGENT PIPELINE</text>
+  <text x="82" y="414" font-family="'DM Sans', sans-serif" font-size="14" fill="#5E7BA8">Cervical cancer screening &amp; referral · Kenya · SHAP at every agent</text>
+
+  <!-- corner tag -->
+  <g transform="translate(620, 372)">
+    <rect x="0" y="0" width="100" height="42" rx="6" fill="#101E35" stroke="#1A2E50"/>
+    <text x="50" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#5E7BA8">AGENTS</text>
+    <text x="50" y="35" text-anchor="middle" font-family="'Syne', sans-serif" font-size="15" font-weight="700" fill="#00C8BE">4 · XAI</text>
+  </g>
+</svg>

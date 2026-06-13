@@ -1,0 +1,62 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sentinel — sepsis early warning">
+  <defs>
+    <linearGradient id="sBg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0C1528"/>
+      <stop offset="1" stop-color="#070D1A"/>
+    </linearGradient>
+    <linearGradient id="sRisk" x1="80" y1="0" x2="720" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00C8BE"/>
+      <stop offset="0.7" stop-color="#00C8BE"/>
+      <stop offset="1" stop-color="#FF5F3F"/>
+    </linearGradient>
+    <linearGradient id="sFill" x1="0" y1="120" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00C8BE" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#00C8BE" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sGlow" cx="0.78" cy="0.32" r="0.5">
+      <stop offset="0" stop-color="#FF5F3F" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FF5F3F" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="sGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1A2E50" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#sBg)"/>
+  <rect width="800" height="450" fill="url(#sGrid)" opacity="0.45"/>
+  <rect width="800" height="450" fill="url(#sGlow)"/>
+
+  <!-- alert threshold line -->
+  <line x1="80" y1="196" x2="720" y2="196" stroke="#5E7BA8" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.7"/>
+  <text x="84" y="188" font-family="'JetBrains Mono', monospace" font-size="13" fill="#5E7BA8">alert threshold</text>
+
+  <!-- clinical onset marker -->
+  <line x1="612" y1="90" x2="612" y2="360" stroke="#FF5F3F" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.55"/>
+  <text x="618" y="104" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FF5F3F" opacity="0.85">onset</text>
+
+  <!-- risk area fill -->
+  <path d="M80 318 L120 300 L160 286 L200 250 L240 232 L280 248 L320 214 L360 238 L400 270 L440 256 L480 212 L520 178 L560 150 L600 132 L640 124 L680 118 L720 122 L720 340 L80 340 Z" fill="url(#sFill)"/>
+
+  <!-- risk waveform -->
+  <path d="M80 318 L120 300 L160 286 L200 250 L240 232 L280 248 L320 214 L360 238 L400 270 L440 256 L480 212 L520 178 L560 150 L600 132 L640 124 L680 118 L720 122" fill="none" stroke="url(#sRisk)" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- alert markers where risk is sustained high -->
+  <g>
+    <circle cx="200" cy="250" r="6" fill="#070D1A" stroke="#00C8BE" stroke-width="2.5"/>
+    <circle cx="520" cy="178" r="6" fill="#070D1A" stroke="#FF5F3F" stroke-width="2.5"/>
+    <circle cx="640" cy="124" r="7" fill="#FF5F3F"/>
+    <circle cx="640" cy="124" r="13" fill="none" stroke="#FF5F3F" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- title block -->
+  <text x="80" y="62" font-family="'Syne', sans-serif" font-size="38" font-weight="800" fill="#E0EAF8" letter-spacing="-1">Sentinel</text>
+  <text x="82" y="404" font-family="'JetBrains Mono', monospace" font-size="14" fill="#00C8BE" letter-spacing="1">CAUSAL SEPSIS EARLY WARNING</text>
+  <text x="82" y="426" font-family="'DM Sans', sans-serif" font-size="14" fill="#5E7BA8">Streaming ICU risk · per-hour · fatigue-aware alerts</text>
+
+  <!-- corner metric tag -->
+  <g transform="translate(620, 392)">
+    <rect x="0" y="0" width="100" height="42" rx="6" fill="#101E35" stroke="#1A2E50"/>
+    <text x="50" y="19" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#5E7BA8">AUROC</text>
+    <text x="50" y="35" text-anchor="middle" font-family="'Syne', sans-serif" font-size="15" font-weight="700" fill="#00C8BE">0.825</text>
+  </g>
+</svg>
